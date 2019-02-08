@@ -1,0 +1,93 @@
+
+/* https://css-tricks.com/snippets/css/system-font-stack/ */
+/* Define the "system" font family */
+/* Fastest loading font - the one native to their device */
+@font-face
+{
+    font-family: system;
+    font-weight: lighter;
+    font-style: normal;
+
+    src: local('.SFNSText-Light'), local('.HelveticaNeueDeskInterface-Light'), local('.LucidaGrandeUI'), local('Ubuntu Light'), local('Segoe UI Light'), local('Roboto-Light'), local('DroidSans'), local('Tahoma');
+}
+
+/* Class Adjustments */
+.heading
+{
+    text-shadow: .2em .2em .7em $dark;
+
+    @include textAdj(
+    $fontfam: null,
+    $scale: 4,
+    $align: center,
+    $color: inherit,
+    $weight: inherit,
+    $style: null,
+    $variant: null,
+    $stretch: null
+    );
+}
+
+.words
+{
+    word-wrap: break-word;
+    word-break: normal;
+
+    text-shadow: .2em .2em .7em $dark;
+
+    @include textAdj(
+    $fontfam: null,
+    $scale: 1,
+    $align: center,
+    $color: inherit,
+    $weight: inherit,
+    $style: null, //oblique, normal, or italic
+    $variant: null, //normal, small-caps,
+    $stretch: null
+    );
+}
+
+.text
+{
+    margin: 0 0 1em 0;
+
+    word-wrap: break-word;
+    word-break: normal;
+
+    text-shadow: .2em .2em .7em $dark;
+
+    @include textAdj(
+    $fontfam: null,
+    $scale: 1,
+    $align: left,
+    $color: inherit,
+    $weight: inherit,
+    $style: null, //oblique, normal, or italic
+    $variant: null, //normal, small-caps,
+    $stretch: null
+    );
+}
+
+.text-light
+{
+    color: $light;
+}
+
+.page-head
+{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+
+    ftext-shadow: .2em .2em .7em $dark;
+    @include textAdj(
+    $fontfam: null,
+    $scale: 4,
+    $align: center,
+    $color: $light,
+    $weight: inherit,
+    $style: null,
+    $variant: null,
+    $stretch: null
+    );
+}

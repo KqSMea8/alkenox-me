@@ -1,0 +1,70 @@
+
+
+.header
+{
+    //animation: fadeIn 2s ease-in-out;
+    @include bgImg(
+    $src: '../static/images/logo.png',
+    $size: cover,
+    $repeat: no-repeat,
+    $position: center
+    );
+    @include breakpoint( $mobileLg )
+    {
+        background-attachment: fixed;
+
+        @include bgImg(
+        $src: '../static/images/logo.png',
+        $size: cover,
+        $repeat: no-repeat,
+        $position: center
+        );
+    };
+    & > div
+    {
+        background-color: black( .9 );
+
+        & > span
+        {
+            position: absolute;
+            top: 30%;
+            bottom: 30%;
+
+            color: $light;
+
+            @include grid-column( 12, $headerGrid );;
+
+
+            & h1
+            {
+                margin: 0 0 .25em 0;
+
+                text-shadow: .2em .2em .7em $dark;
+
+                @include textAdj(
+                $fontfam: null,
+                $scale: 4,
+                $align: center,
+                $color: $light,
+                $weight: inherit,
+                $style: null,
+                $variant: null,
+                $stretch: null
+                );
+                @include breakpoint( $mobileLg )
+                {
+                    @include textAdj(
+                    $fontfam: null,
+                    $scale: 8,
+                    $align: center,
+                    $color: $light,
+                    $weight: inherit,
+                    $style: null,
+                    $variant: null,
+                    $stretch: null
+                    );
+                }
+            }
+        }
+    };
+}

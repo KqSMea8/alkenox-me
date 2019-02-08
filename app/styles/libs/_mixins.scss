@@ -1,0 +1,110 @@
+@mixin bgImg( $src, $size, $repeat, $position )
+{
+    background-image: url( $src );
+    background-repeat: $repeat;
+    background-position: $position;
+    background-size: $size;
+}
+
+@mixin bgSolid( $color, $width, $height )
+{
+    width: $width;
+    height: $height;
+
+    background-color: $color;
+}
+
+@mixin bgGradient( $start-color, $end-color, $orientation, $width, $height )
+{
+    width: $width;
+    height: $height;
+
+    @include background-gradient($start-color, $end-color, $orientation); // Andy's Tool
+}
+
+@mixin textAdj( $fontfam, $scale, $align, $color, $weight, $style, $variant, $stretch )
+{
+    font-family: $fontfam;
+    font-size: modular-scale($scale);
+    font-weight: $weight;
+    font-style: $style;
+    font-variant: $variant;
+    font-stretch: $stretch;
+
+    text-align: $align;
+
+    color: $color;
+}
+
+@mixin spacer( $pad, $margin )
+{
+    margin: $margin;
+    padding: $pad;
+}
+
+@mixin noGaps
+{
+    @include spacer( 0, 0 );
+}
+@mixin aligner( $display, $content, $items, $self, $justify )
+{
+    display: $display;
+    align-content: $content;
+    align-items: $items;
+    align-self: $self;
+    justify-content: $justify;
+}
+
+@mixin alignCenter
+{
+    display: flex;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+}
+
+@mixin alignJustify
+{
+    display: flex;
+    //align-content: center;
+    //align-items: center;
+    //align-self: center;
+    justify-content: center;
+}
+
+@mixin fixedNavTop
+{
+    position: fixed;
+    z-index: 10000;
+    top: 0;
+}
+
+@mixin verticalCenter
+{
+    position: absolute;
+    top: 2em;
+    bottom: 2em;
+}
+
+@mixin aspect-ratio($width, $height)
+{
+    position: relative;
+    &:before
+    {
+        display: block;
+
+        width: 100%;
+        padding-top: ($height / $width) * 100%;
+
+        content: '';
+    }
+     > .aspect-content
+    {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+    }
+}

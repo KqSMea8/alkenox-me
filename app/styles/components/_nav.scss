@@ -1,0 +1,87 @@
+$navGrid: (
+  columns: 12,
+  gutter: 0,
+  //media: 1200px,
+  //color: rgba(#00d4ff, .25),
+  //direction: ltr,
+);
+
+.site-nav
+{
+    height: 2em;
+}
+
+.navBtn
+{
+    background-color: rgba( $dark, .9 );
+
+    @include textAdj( $fontfam: inherit, $scale: 1, $align: center, $color: $light, $weight: inherit, $style: null, $variant: null, $stretch: null );
+}
+
+.brand
+{
+    z-index: 10001;
+
+    margin-right: auto;
+
+    @include textAdj( $fontfam: inherit, $scale: 1, $align: center, $color: $light, $weight: inherit, $style: null, $variant: null, $stretch: null );
+    @include breakpoint($mobileLg)
+    {
+        @include textAdj( $fontfam: null, $scale: .6, $align: center, $color: $light, $weight: inherit, $style: null, $variant: null, $stretch: null );
+    }
+}
+
+.collap
+{
+    color: $light;
+
+    @include bgSolid( rgba($alert, 1), null, null);
+}
+
+.nav
+{
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    right: 0;
+    left: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    max-width: 100vw;
+    height: 1em;
+    margin: 0 auto;
+    padding: 1em 0;
+
+    @include bgSolid( rgba( $dark, .9 ), null, null );
+    @include fixedNavTop;
+    @include spacer( 1em 2em, 0 );
+}
+
+.navMenu
+{
+    @include bgSolid( rgba( $dark, .9 ), null, null );
+
+
+    & ul
+    {
+        @include list-no-bullets;
+        @include textAdj( $fontfam: inherit, $scale: 1, $align: right, $color: $light, $weight: inherit, $style: null, $variant: null, $stretch: null );
+        @include breakpoint($mobileLg)
+        {
+            @include textAdj( $fontfam: null, $scale: 2, $align: left, $color: $light, $weight: inherit, $style: null, $variant: null, $stretch: null );
+        }
+
+        & li
+        {
+            margin: 0 .5em;
+        }
+
+        & a
+        {
+            text-decoration: none;
+        }
+    }
+}

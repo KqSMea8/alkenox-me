@@ -1,0 +1,75 @@
+.bg-tint
+{
+    background-color: rgba( $dark, .5 );
+}
+
+.bg-tint-2
+{
+    height: 100%;
+
+    background-color: rgba( $g900, .8 );
+}
+
+.info-bg
+{
+    color: $dark;
+    background-color: rgba( $white, .8 );
+}
+
+.info-bg-7
+{
+    color: $dark;
+    background-color: rgba( $white, .6 );
+}
+
+.logo-bg
+{
+    background-attachment: fixed;
+
+    @include bgImg(
+    $src: '../static/images/logo.png',
+    $size: cover,
+    $repeat: no-repeat,
+    $position: center
+    );
+}
+
+
+.bg-hotWave
+{
+    opacity: .7;
+    background-attachment: fixed;
+
+    @include bgImg(
+    $src: '../static/images/hotWave.png',
+    $size: 100% 50%,
+    $repeat: no-repeat,
+    $position: center 85%
+    );
+}
+
+.bg-coldWave
+{
+    opacity: .7;
+    background-attachment: fixed;
+
+    @include bgImg(
+    $src: '../static/images/coldWave.png',
+    $size: 100% 50%,
+    $repeat: no-repeat,
+    $position: center 85%
+    );
+}
+
+.bg-code
+{
+    opacity: .7;
+    background-attachment: fixed;
+
+    @include bgImg(
+    $src: '../static/images/code.png',
+    $size: cover,
+    $repeat: no-repeat,
+    $position: center
+    );
+}

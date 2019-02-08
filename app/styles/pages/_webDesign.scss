@@ -1,0 +1,100 @@
+
+.bg-logo
+{
+    height: 100vh;
+    //opacity: .7;
+
+    background-attachment: fixed;
+
+    @include bgImg(
+    $src: '../static/images/logo.png',
+    $size: cover,
+    $repeat: no-repeat,
+    $position: center
+    );
+}
+
+.bg-proto
+{
+    height: 80vh;
+    //opacity: .7;
+    //background-attachment: fixed;
+
+    @include bgImg(
+    $src: '../static/images/business-camera-coffee-1509428.jpg',
+    $size: cover,
+    $repeat: no-repeat,
+    $position: center top
+    );
+}
+
+
+.bg-dev
+{
+    height: 80vh;
+    //opacity: .7;
+    //background-attachment: fixed;
+
+    @include bgImg(
+    $src: '../static/images/black-black-and-white-close-up-1496139.jpg',
+    $size: 100%,
+    $repeat: no-repeat,
+    $position: center
+    );
+}
+
+.bg-manage
+{
+    height: 80vh;
+    //opacity: .7;
+    //background-attachment: fixed;
+
+    @include bgImg(
+    $src: '../static/images/adult-business-data-1181316.jpg',
+    $size: 100%,
+    $repeat: no-repeat,
+    $position: center
+    );
+}
+
+.bg-seo
+{
+    height: 100vh;
+    //opacity: .7;
+    //background-attachment: fixed;
+
+    @include bgImg(
+    $src: '../static/images/computer-writing-hand-man-board-technology-1410655-pxhere.com.jpg',
+    $size: 100%,
+    $repeat: no-repeat,
+    $position: center
+    );
+}
+
+.bg-modern
+{
+    height: 100vh;
+    //opacity: .7;
+    //background-attachment: fixed;
+
+    @include bgImg(
+    $src: '../static/images/modernWebDesignBg.jpg',
+    $size: 100%,
+    $repeat: no-repeat,
+    $position: center
+    );
+}
+
+.bg-serverless
+{
+    height: 90vh;
+    //opacity: .7;
+    //background-attachment: fixed;
+
+    @include bgImg(
+    $src: '../static/images/business-cabinet-data-325229.jpg',
+    $size: 150%,
+    $repeat: no-repeat,
+    $position: center
+    );
+}

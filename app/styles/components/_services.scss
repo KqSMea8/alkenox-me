@@ -1,0 +1,235 @@
+
+
+.services
+{
+    @include noGaps;
+
+    & h2
+    {
+        text-shadow: .2em .2em .7em $dark;
+
+        @include textAdj(
+        $fontfam: inherit,
+        $scale: 3,
+        $align: center,
+        $color: $light,
+        $weight: inherit,
+        $style: null,
+        $variant: null,
+        $stretch: null
+        );
+    }
+    & .bg
+    {
+        z-index: 0;
+
+        width: 100%;
+        height: 100%;
+
+        opacity: .25;
+    }
+    & > span
+    {
+        height: 33vh;
+
+        @include alignCenter;
+    }
+    & h2
+    {
+        position: absolute;
+        z-index: 5;
+
+        width: 100%;
+        height: 100%;
+    }
+    & > span.webBlok,
+    & > span.motionBlok
+    {
+        position: relative;
+
+        @include breakpoint($mobile1st)
+        {
+            @include grid-column( 12, $homeGrid );
+        }
+        @include breakpoint($desktopSm)
+        {
+            @include grid-column( 3, $homeGrid );
+        }
+    }
+
+    & > span.interBlok,
+    & > span.vidBlok,
+    & > span.soundBlok,
+    & > span.mxBlok,
+    & > span.rxBlok
+    {
+        position: relative;
+
+        @include breakpoint($mobile1st)
+        {
+            @include grid-column( 12, $homeGrid );
+        }
+        @include breakpoint($desktopSm)
+        {
+            @include grid-column( 6, $homeGrid );
+        }
+    }
+
+    & > span.webBlok
+    {
+        & > h2
+        {
+            @include bgSolid(
+            $color: rgba( $moon, $bgopacity ),
+            $width: null,
+            $height: null );
+            @include alignCenter;
+        }
+
+        & > span.bg
+        {
+            @include bgImg(
+            $src: '../static/images/laptop-iphone-smartphone-mobile-screen-apple-753019-pxhere.com.jpg',
+            $size: cover,
+            $repeat: no-repeat,
+            $position: center
+            );
+        }
+    }
+
+    & > span.motionBlok
+    {
+        & > h2
+        {
+            @include bgSolid(
+            $color: rgba( $glorious, $bgopacity ),
+            $width: null,
+            $height: null );
+            @include alignCenter;
+        }
+        & > span.bg
+        {
+            @include bgImg(
+            $src: 'https://github.com/alkenox/alkenox-me-gifs/blob/master/title-seq-atm.gif?raw=true',
+            $size: cover,
+            $repeat: no-repeat,
+            $position: center
+            );
+        }
+    }
+
+    & > span.interBlok
+    {
+        & > h2
+        {
+            @include bgSolid(
+            $color: rgba( $money,$bgopacity ),
+            $width: null,
+            $height: null
+            );
+            @include alignCenter;
+        }
+
+        & > span.bg
+        {
+            @include bgImg(
+            $src: 'https://github.com/alkenox/alkenox-me-gifs/blob/master/logo-seq.gif?raw=true',
+            $size: cover,
+            $repeat: no-repeat,
+            $position: center
+            );
+        }
+    }
+
+    & > span.vidBlok
+    {
+        & > h2
+        {
+            @include bgSolid(
+            $color: rgba( $caution,$bgopacity ),
+            $width: null,
+            $height: null
+            );
+            @include alignCenter;
+        }
+
+        & > span.bg
+        {
+            background-origin: content-box;
+
+            @include bgImg(
+            $src: 'https://media.giphy.com/media/229roNqcyGIZNfWCfj/giphy.gif',
+            $size: cover,
+            $repeat: no-repeat,
+            $position: center
+            );
+        }
+    }
+
+    & > span.soundBlok
+    {
+        & > h2
+        {
+            @include bgSolid(
+            $color: rgba( $alert,$bgopacity ),
+            $width: null,
+            $height: null
+            );
+            @include alignCenter;
+        }
+
+        & > span.bg
+        {
+            @include bgImg(
+            $src: 'https://github.com/alkenox/alkenox-me-gifs/blob/master/title-seq-caution.gif?raw=true',
+            $size: cover,
+            $repeat: no-repeat,
+            $position: center 25%
+            );
+        }
+    }
+
+    & > span.mxBlok
+    {
+        & > h2
+        {
+            @include bgSolid(
+            $color: rgba( $water,$bgopacity ),
+            $width: null,
+            $height: null
+            );
+            @include alignCenter;
+        }
+        & > span.bg
+        {
+            @include bgImg(
+            $src: 'https://github.com/alkenox/alkenox-me-gifs/blob/master/talent-seq-joker.gif?raw=true',
+            $size: cover,
+            $repeat: no-repeat,
+            $position: center
+            );
+        }
+    }
+
+    & > span.rxBlok
+    {
+        & > h2
+        {
+            @include bgSolid(
+            $color: rgba( $water,$bgopacity ),
+            $width: null,
+            $height: null
+            );
+            @include alignCenter;
+        }
+        & > span.bg
+        {
+            @include bgImg(
+            $src: '../static/images/computer-light-technology-night-line-color-1052875-pxhere.com.jpg',
+            $size: cover,
+            $repeat: no-repeat,
+            $position: center
+            );
+        }
+    }
+}

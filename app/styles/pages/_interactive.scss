@@ -1,0 +1,12 @@
+$interactiveGrid: (
+  columns: 12,
+  gutter: 0,
+  //media: 1200px,
+  //color: rgba(#00d4ff, .25),
+  direction: ltr,
+);
+
+.interactive
+{
+    @include bgSolid( $dark, null, null );
+}

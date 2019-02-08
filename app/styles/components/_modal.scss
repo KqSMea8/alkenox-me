@@ -1,0 +1,14 @@
+.noxModal
+{
+    position: absolute;
+    z-index: 9000;
+    top: 25%;
+    right: 25%;
+    bottom: 25%;
+    left: 25%;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba( $g900, .7 );
+}

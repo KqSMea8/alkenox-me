@@ -1,0 +1,61 @@
+.aspect-ratio-box
+{
+    //@include aspect-ratio( $width: 1920, $height: 1080 );
+
+    &::before
+    {
+        float: left;
+
+        width: 1px;
+        height: 0;
+        margin-left: -1px;
+        padding-top: 591.44px / 1127.34px * 100%;
+
+        content: '';
+    }
+    &::after
+    {
+        display: table;
+        clear: both;
+        /* to clear float */
+
+        content: '';
+    }
+}
+
+.center
+{
+    margin: 0 auto;
+}
+
+.nowrap
+{
+    display: inline-flex;
+    justify-content: space-between;
+
+    padding: 1em;
+}
+
+.center-content
+{
+    //@include aspect-ratio( $width: 1920, $height: 1080 );
+    display: block;
+
+    padding: 20% 15%;
+
+    vertical-align: middle;
+}
+.bg-content
+{
+    display: flex;
+    justify-content: center;
+
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg-block
+{
+    display: flex;
+    justify-content: center;
+}
