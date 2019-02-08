@@ -27,7 +27,7 @@
     background-attachment: fixed;
 
     @include bgImg(
-    $src: '../static/images/logo.png',
+    $src: '../static/images/alkenox-me-images/logo.png',
     $size: cover,
     $repeat: no-repeat,
     $position: center
@@ -41,7 +41,7 @@
     background-attachment: fixed;
 
     @include bgImg(
-    $src: '../static/images/hotWave.png',
+    $src: '../static/images/alkenox-me-images/hotWave.png',
     $size: 100% 50%,
     $repeat: no-repeat,
     $position: center 85%
@@ -54,7 +54,7 @@
     background-attachment: fixed;
 
     @include bgImg(
-    $src: '../static/images/coldWave.png',
+    $src: '../static/images/alkenox-me-images/coldWave.png',
     $size: 100% 50%,
     $repeat: no-repeat,
     $position: center 85%
@@ -67,7 +67,7 @@
     background-attachment: fixed;
 
     @include bgImg(
-    $src: '../static/images/code.png',
+    $src: '../static/images/alkenox-me-images/code.png',
     $size: cover,
     $repeat: no-repeat,
     $position: center

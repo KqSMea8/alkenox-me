@@ -7,22 +7,9 @@ import { Fade } from 'react-reveal'
 
 import AudioPlayer from 'react-modular-audio-player'
 
-import FilmScore from '../static/audio/film_score_reel.mp3'
-
-import BrokenSeams from '../static/audio/broken_seams.mp3'
-import DickTracey from '../static/audio/dick_tracey.mp3'
-import FeralEncounter from '../static/audio/feral_encounter.mp3'
-import OnDisplay from '../static/audio/on_display.mp3'
-import Reflexion from '../static/audio/reflexion.mp3'
-import TheEscape from '../static/audio/the_escape.mp3'
-import TommysPlace from '../static/audio/tommys_place.mp3'
-import TwistedDreams from '../static/audio/twisted_dreams.mp3'
-import UhLilLit from '../static/audio/uh_lil_lit.mp3'
-import VegasOvernight from '../static/audio/vegas_overnight.mp3'
-
 let audioScores = [
   {
-    src: FilmScore,
+    src: 'https://github.com/alkenox/alkenox-me-audio/blob/master/film_score_reel.mp3?raw=true',
     title: "SFXsource",
     artist: "n0-x"
   }
@@ -30,37 +17,37 @@ let audioScores = [
 
 let audioSourceCues = [
   {
-    src: DickTracey,
+    src: 'https://github.com/alkenox/alkenox-me-audio/blob/master/dick_tracey.mp3?raw=true',
     title: "Dick Tracey",
     artist: "n0-x"
   },
   {
-    src: UhLilLit,
+    src: 'https://github.com/alkenox/alkenox-me-audio/blob/master/uh_lil_lit.mp3?raw=true',
     title: "Uh Lil Lit",
     artist: "n0-x"
   },
   {
-    src: BrokenSeams,
+    src: 'https://github.com/alkenox/alkenox-me-audio/blob/master/broken_seams.mp3?raw=true',
     title: "Broken Seams",
     artist: "n0-x"
   },
   {
-    src: OnDisplay,
+    src: 'https://github.com/alkenox/alkenox-me-audio/blob/master/on_display.mp3?raw=true',
     title: "On Display",
     artist: "n0-x"
   },
   {
-    src: Reflexion,
+    src: 'https://github.com/alkenox/alkenox-me-audio/blob/master/reflexion.mp3?raw=true',
     title: "Reflexion",
     artist: "n0-x"
   },
   {
-    src: TommysPlace,
+    src: 'https://github.com/alkenox/alkenox-me-audio/blob/master/tommys_place.mp3?raw=true',
     title: "Tommy's Place",
     artist: "n0-x"
   },
   {
-    src: VegasOvernight,
+    src: 'https://github.com/alkenox/alkenox-me-audio/blob/master/vegas_overnight.mp3?raw=true',
     title: "Vegas Overnight",
     artist: "n0-x"
   }

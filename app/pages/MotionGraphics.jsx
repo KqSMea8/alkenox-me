@@ -39,7 +39,7 @@ const MotionGraphics = () => (
         <div className='player-wrapper'>
           <ReactPlayer
             className='react-player'
-            url='https://youtu.be/nRcVtIlw9RY'
+            url='https://github.com/alkenox/alkenox-me-videos/blob/master/whiteboard-enoch.mp4?raw=true'
             width='100%'
             height='100%'
             loop
@@ -64,7 +64,7 @@ const MotionGraphics = () => (
         <div className='player-wrapper'>
           <ReactPlayer
             className='react-player'
-            url='https://youtu.be/UaddaySMKvc'
+            url='https://github.com/alkenox/alkenox-me-videos/blob/master/talent-seq-joker.mp4?raw=true'
             width='100%'
             height='100%'
             loop
@@ -85,7 +85,7 @@ const MotionGraphics = () => (
         </div>
       </Fade>
 
-      <img src='https://media.giphy.com/media/MVgLYGeuRP4JynEhNU/giphy.gif' alt='Sissy Promo Gif' />
+      <img src='https://github.com/alkenox/alkenox-me-gifs/blob/master/sissy-arrow.gif?raw=true' alt='Sissy Promo Gif' />
 
       <Fade left duration={ 2000 } delay={ 0 } enter exit fraction={ .3 }>
         <div className='nox-12 bg-vectorArt'>
