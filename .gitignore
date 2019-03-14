@@ -1,6 +1,6 @@
-
-
+static/**
+dist/**
 .cache/**
 node_modules/**
-app/static/**
+modules/**
 *.DS_Store
