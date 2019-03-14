@@ -1,33 +1,41 @@
 {
   "env": {
     "server": {
-      "presets": ["react"],
-      "plugins": [
-        "react-imported-component/babel",
-        "babel-plugin-dynamic-import-node",
-        "@babel/plugin-proposal-class-properties",
+      "plugins": ["react-imported-component/babel", "babel-plugin-dynamic-import-node", "@emotion/babel-preset-css-prop", "@loadable/babel-plugin", ["emotion",
       {
-        "loose": true
-      },
-      "@babel/plugin-proposal-decorators",
-      {
-        "decorators-legacy": true
-      }
-    ]
+        "sourceMap": true,
+        "autoLabel": "process.env.NODE_ENV !== 'production'",
+        "labelFormat": "[local]",
+        "cssPropOptimization": true
+      }],["import", {
+  "libraryName": "antd",
+  "style": true,
+},{
+  "libraryName": "lodash",
+  "libraryDirectory": "",
+  "camel2DashComponentName": false,
+}]]
     },
     "client": {
-      "presets": ["react"],
-      "plugins": [
-        "react-imported-component/babel",
-        "@babel/plugin-proposal-class-properties",
+      "plugins": ["react-imported-component/babel", "@emotion/babel-preset-css-prop", "@loadable/babel-plugin", ["emotion",
       {
-        "loose": true
-      },
-      "@babel/plugin-proposal-decorators",
-      {
-        "decorators-legacy": true
-      }
-    ]
+
+        "sourceMap": true,
+        "autoLabel": "process.env.NODE_ENV !== 'production'",
+        "labelFormat": "[local]",
+        "cssPropOptimization": true
+      }],["import", {
+  "libraryName": "antd",
+  "style": true,
+},{
+  "libraryName": "lodash",
+  "libraryDirectory": "",
+  "camel2DashComponentName": false,
+},{
+  "libraryName": "@material-ui/core",
+  "libraryDirectory": "components",
+  "camel2DashComponentName": false,
+}]]
     }
   }
 }

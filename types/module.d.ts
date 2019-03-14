@@ -1,0 +1,21 @@
+declare module "*.png";
+declare module "*.gif";
+declare module "*.jpg";
+declare module "*.json";
+declare module "*.svg";
+
+declare module "react-reveal";
+declare module "react-reveal/globals";
+declare module "react-modular-audio-player";
+declare module "react-lazyload";
+declare module "react-modal";
+declare module "rebass";
+declare module "rc-animate";
+declare module "rc-banner-anim";
+declare module "rc-queue-anim";
+declare module "rc-scroll-anim";
+declare module "rc-texty";
+declare module "rc-tween-one";
+declare module "nodemailer";
+declare module "react-snapshot";
+declare module "express";
