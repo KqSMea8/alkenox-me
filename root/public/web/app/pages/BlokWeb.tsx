@@ -34,7 +34,7 @@ const Li = styled.ul`
 const BlokWeb: React.SFC<{}> = () => {
   return (
     <Flex flexWrap="wrap">
-      <Box width={1}>
+      <Box width={[1, 1, 1, 2/3]} mx='auto' mt={5} px={3}>
         <h1>
           Web / UX / UI
           <br />
@@ -43,32 +43,47 @@ const BlokWeb: React.SFC<{}> = () => {
         <h2>Developing Your Website</h2>
 
         <img className="fluid bannerize" src={ArchImg} />
+        <p mx='auto'>
+          Whether you already have a website, or this will be your first one, we
+          are more than happy to help! First and foremost, deciding what your
+          website needs to say is key. The purpose drives the design. Our
+          questionnaire may seem like a lot, but we need to get to know how you
+          view your business and/or your brand. This helps us to know what options
+          we can present to you of ways we can have your website present you and
+          your business to the world.
+        </p>
 
-        <h3>Building The Prototype</h3>
+        <h2>Building The Prototype</h2>
 
         <img className="fluid bannerize" src={ProtoImg} />
 
         <p>
-          Everything begins with a prototype. You will work with one or more of
+          Based on our discussions with you about your website desires and needs,
+          we will draw up a prototype/wireframe for the new design to present to
+          you for changes and final approval. You will work with one or more of
           our artists/designers to develop the overall look, style, and
-          aesthetics of your vision.
+          functionality of your vision.
         </p>
-        <h3>Programming</h3>
+
+        <h2>Programming</h2>
+
+        <img className="fluid bannerize" src={CodeImg} />
+
         <p>
           Once we have a prototype to build from, we can hand it over to our
           programming department where your custom design will become functional
           code.
         </p>
 
-        <img className="fluid bannerize" src={CodeImg} />
+        <h2>Website Management & SEO</h2>
 
-        <h3>Website Management & SEO</h3>
+
+        <img className="fluid bannerize" src={MngImg} />
+
         <p>
           After your design is up and running we will manage your site for six
           (6) months. This includes, at minimum, all of your site's basic needs
         </p>
-
-        <img className="fluid bannerize" src={MngImg} />
 
         <Ul>
           <Li>Hosting</Li>
@@ -89,19 +104,22 @@ const BlokWeb: React.SFC<{}> = () => {
             (For Popular Search Engines & Browsers)
           </Li>
         </Ul>
+
+
         <p>
           After the initial six (6) month term you may take your site and data
           to your own hosting service or in-house management team.
         </p>
         <h2>Defining Your Users' Experience</h2>
+
+        <img className="fluid" src={UxImg} />
+
         <p>
           We collect data about your target user base and their preferences
           based on your projects goal. This data will help us shape a meaningful
           user interface that will allow for an overall smoother and more
           appreciated experience.
         </p>
-
-        <img className="fluid" src={UxImg} />
 
         <h2>Crafting Your User Interface</h2>
 
@@ -112,7 +130,7 @@ const BlokWeb: React.SFC<{}> = () => {
           first impression and a unique design can help your brand stand out
           from the massive amount of clinical designs currently in use. Our
           "artists" break this cycle by helping you to convey your brand's
-          character as well as imparting information.
+          character while still imparting information to your visitors.
         </p>
       </Box>
     </Flex>
