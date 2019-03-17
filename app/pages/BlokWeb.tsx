@@ -3,7 +3,7 @@ import * as React from "react";
 import LazyLoad from "react-lazyload";
 
 import ReactPlayer from "react-player";
-import AudioPlayer from "react-modular-audio-player";
+
 
 import styled from "@emotion/styled";
 
