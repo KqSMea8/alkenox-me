@@ -1,0 +1,13 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions":
+  {
+    "rootDir": "./root/public/tools",
+    "outDir": "./root/public/tsOut",
+    "baseUrl": "./root/public/tools",
+    "paths":
+    {
+      "@quramy/*": [ "../*/app" ]
+    }
+  }
+}

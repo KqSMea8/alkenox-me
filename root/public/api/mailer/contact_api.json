@@ -1,0 +1,12 @@
+{
+  "web": {
+    "client_id": "808477645940-cl1evfsnsconr4okhcsrnsodcl2iqqhl.apps.googleusercontent.com",
+    "project_id": "contact-form-230422",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "OSYZK5JSt8a6AYcgDncy_bwZ",
+    "redirect_uris": ["https://alkenox-me.com", "https://alkenox.com", "https://n0-x.com", "https://withoutabudget.com"],
+    "javascript_origins": ["https://alkenox-me.com", "https://alkenox.com", "https://n0-x.com", "https://withoutabudget.com"]
+  }
+}

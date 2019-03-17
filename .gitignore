@@ -1,8 +1,7 @@
-static/**
-dist/**
-.cache/**
-node_modules/**
-modules/**
+**/scratch
+**/dist
+**/.cache
+**/node_modules
 *.DS_Store
 yarn.lock
 yarn-error.log

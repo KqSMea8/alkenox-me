@@ -1,0 +1,12 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions":
+  {
+    "rootDir": "./root/public/web",
+    "jsx": "react",
+  },
+  "references": [
+  {
+    "path": [ "../core/**", "../api/**", "../tools/**", "../../root/**" ]
+  } ]
+}

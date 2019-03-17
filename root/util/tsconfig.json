@@ -1,0 +1,33 @@
+{
+  //"compileOnSave": true,
+  "compilerOptions":
+  {
+    "target": "es5",
+    "module": "es2015",
+    "types": [ "reflect-metadata", "node", "lodash", "express" ],
+    "strict": false,
+    "jsx": "react",
+    "rootDir": "./",
+    "noImplicitAny": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "moduleResolution": "node",
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "typeRoots": [ "./root/public/core/types" ],
+    "lib": [ "dom", "es2015", "es2016" ],
+    "plugins": [
+    {
+      "name": "typescript-tslint-plugin"
+    } ]
+  },
+  "files": [
+    "root/public/core/types/interface.d.ts",
+    "root/public/core/types/module.d.ts",
+    "root/public/core/types/element.d.ts"
+  ],
+  "exclude": [
+    "node_modules", "**/*/node_modules"
+  ]
+}

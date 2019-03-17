@@ -1,0 +1,12 @@
+{
+  "extends": "../../../tsconfig.json",
+  "compilerOptions":
+  {
+    "rootDir": "./root/public/native",
+    "jsx": "react-native",
+  },
+  "references": [
+  {
+    "path": [ "../core/**", "../api/**", "../tools/**", "../../root/**" ]
+  } ]
+}
