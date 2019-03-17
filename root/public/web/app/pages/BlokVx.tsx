@@ -7,7 +7,7 @@ import { Flex, Link as Href, Image, Box, Card, Heading, Text } from 'rebass';
 const BlokVx: React.SFC<{}> = () => {
   return (
     <Flex flexWrap="wrap">
-      <Box width={[1, 1, 1, 2/3} mx='auto'>
+      <Box width={[1, 1, 1, 2/3]} mx='auto'>
         <h1>Video Production</h1>
         <h2>Web Video</h2>
         <p>
