@@ -80,11 +80,14 @@ const BlokWeb: React.SFC<{}> = () => {
 
         <img className="fluid bannerize" src={MngImg} />
 
+      <Box mx='auto' width={1}>
         <p>
           After your design is up and running we will manage your site for six
           (6) months. This includes, at minimum, all of your site's basic needs
         </p>
+      </Box>
 
+      <Box mx='auto' width={1/4}>
         <Ul>
           <Li>Hosting</Li>
           <Li>Required SSL Certificate</Li>
@@ -104,6 +107,7 @@ const BlokWeb: React.SFC<{}> = () => {
             (For Popular Search Engines & Browsers)
           </Li>
         </Ul>
+      </Box>
 
 
         <p>
