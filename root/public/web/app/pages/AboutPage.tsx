@@ -25,7 +25,7 @@ const AboutPage: React.SFC<{}> = () => {
       </Flex>
 
       <Flex flexWrap="wrap">
-        <Box py={[3]} px={3} width={[1, 3/4, 1/2, 1/2]} textAlign='center' mx='auto'>
+        <Box py={3} px={3} width={[1, 3/4, 1/2, 1/2]} textAlign='center' mx='auto'>
           <Text textAlign="center" fontSize={[2, 3, 4, 4]}>
             Alkenox Media & Entertainment is an independent media production company,
             officially founded in 2018, in the greater Atlanta area. At its core, we
