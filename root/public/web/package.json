@@ -4,17 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "private": true,
-  "scripts": {
-    "dev": "rimraf dist .cache/ && yarn generate-imported-component && parcel -p 3000 app/index.html",
-    "dev:server": "babel-watch ./server/server.js",
-    "build": "rimraf dist .cache && yarn generate-imported-component && yarn build-client && yarn build-server",
-    "build-client": "cross-env BABEL_ENV=client parcel build app/index.html -d dist/client --public-url /dist",
-    "build-server": "cross-env BABEL_ENV=server parcel build server/index.js -d dist/server --public-url /dist --target=node6",
-    "generate-imported-component": "imported-components app app/imported.ts",
-    "favicon": "unite-image pngsToIco --sourceFolder=./app --sourceFiles=favicon.png --destFile=./app/favicon.ico",
-    "serve": "node dist/server/"
+  "scripts":
+  {
+    "generate-imported-component": "imported-components app app/imported.ts"
   },
-  "dependencies": {
+  "dependencies":
+  {
     "@emotion/core": "^10.0.0",
     "@emotion/styled": "^10.0.7",
     "@rebass/components": "^4.0.0-1",
@@ -54,7 +49,8 @@
     "rebass": "^3.0.1",
     "yup": "^0.26.10"
   },
-  "devDependencies": {
+  "devDependencies":
+  {
     "@babel/core": "^7.3.4",
     "@babel/polyfill": "^7.2.5",
     "@loadable/babel-plugin": "^5.6.0",
