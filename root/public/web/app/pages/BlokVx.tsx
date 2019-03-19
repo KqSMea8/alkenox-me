@@ -2,15 +2,16 @@ import * as React from 'react';
 
 import ReactPlayer from 'react-player';
 
+import {useSpring, animated} from 'react-spring';
+
 import { Flex, Link as Href, Image, Box, Card, Heading, Text } from 'rebass';
 
 const BlokVx: React.SFC<{}> = () => {
   return (
     <Flex flexWrap="wrap">
-      <Box width={3/4} mx='auto'  mt={5}>
-        <h1>Video Production</h1>
-        <h2>Web Video</h2>
-      </Box>
+        <Heading width={1} textAlign='center' fontSize={[3, 4, 5]} mt={5} py={3}>Video Production</Heading>
+        <Heading width={1} textAlign='center' fontSize={[3, 4,]}>Web Video</Heading>
+
 
 
 
@@ -31,7 +32,7 @@ const BlokVx: React.SFC<{}> = () => {
       </Box>
 
 
-      <Box mx='auto' py={5} fontSize={3} alignContent='center'>
+      <Box mx='auto' py={2} fontSize={3}>
         <ReactPlayer
           url="https://github.com/alkenox/alkenox-me-videos/blob/master/trailer-mosaic.mp4?raw=true"
           width="100%"
@@ -42,16 +43,21 @@ const BlokVx: React.SFC<{}> = () => {
           volume={0}
         />
 
-        <p>Movie Trailer for the Indie Feature Film "Mosaic" with all original scoring and
-        3D Motion Graphics.
-        </p>
+        <Text pb={5}>Movie Trailer for the Indie Feature Film "Mosaic" with all original scoring and
+        3D Motion Graphics.</Text>
       </Box>
 
-      <Box width={3/4} mx='auto' py={3} fontSize={3}>
-        <h2>Our Process</h2>
+      <br />
 
-        <p>
-        Pre-Production is where we come together and figure out what it is you
+
+    <Heading width={1} textAlign='center' mt={5} fontSize={[3, 4, 5]}>Our Process</Heading>
+
+
+      <Box width={3/4} mx='auto' fontSize={3}>
+
+        <h3>Pre-Production</h3>
+
+        <p> We come together and figure out what it is you
         will need, get you a quote on how much it will cost to effectively produce
         your project, and sort out the shooting schedule with the script that you
         will also either provide us with or that we will help you write. This is
@@ -59,22 +65,34 @@ const BlokVx: React.SFC<{}> = () => {
         the entire project can lose its focus and fall apart very quickly.
         </p>
 
-        <p>
-        Production is when we embark upon what we have planned out for our shooting
+        <h3>Production</h3>
+
+        <p>We embark upon what we have planned out for our shooting
         schedule. We arrive on location, with rehearsed talent, and begin collecting
-        all the shots that we need to create your story.
-        </p>
+        all the shots that we need to create your story.</p>
+
+        <h3>Post-Production</h3>
+        <p>Where it all comes together into the final product. We
+        cut the footage together. We beautify the footage as much as possible with
+        stabilization, smooth transitions, and color enhancement. We add in any
+        motion graphics or  requested.</p>
 
       </Box>
 
-      <Box width={3/4} mx='auto' py={3} fontSize={3}>
+
+      <Box width={3/4} alignContent='center' mx='auto' py={3} fontSize={3}>
         <h2>The Cost</h2>
 
 
-        <p> Prices for video production depend on how much time is needed to
-        complete the shoot, how many and what kind of talent are needed in front
-        of the camera and behind it, and what kind of equipment is/space is
-        needed.
+        <p> Each part of the production process incurs its costs, which is why in video
+        production, when asked for an average price, the answer always has to be "It depends...":
+          <ul>
+            <li>Time - Needed for Pre-Production, Production, and Post</li>
+            <li>Talent - In front of the camera and behind it. (ie. make-up artist, drone operator, etc.)</li>
+            <li>Equipment - Based on type of imagery desired, may need special lenses, special
+            or multiple cameras, green screen, or studio space...</li>
+            <li>Post-Production - </li>
+          </ul>
         </p>
       </Box>
 
