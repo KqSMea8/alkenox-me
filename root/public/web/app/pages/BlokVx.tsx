@@ -77,18 +77,18 @@ const BlokVx: React.SFC<{}> = () => {
 
 
 
-    <Heading width={1} textAlign='center' mx='auto' py={3} fontSize={[3, 4, 5]}>The Cost</Heading>
+    <Heading width={1} textAlign='center' mx='auto' py={3} fontSize={[3, 4, 5]}>Pricing</Heading>
 
       <Box width={1/2} mx='auto' fontSize={3}>
-        <p> Each part of the production process incurs its costs, which is why in video
-        production, when asked for an average price, the answer always has to be "It depends...":
+        <p> The Cost of a production depends on what kind of video you need:
           <ul>
-            <li>Time - Needed for Pre-Production, Production, and Post</li>
+            <li><Link href='./VideoPrices.tsx'> Branded Video </Link> - Typical length is under 
+            60 seconds and targets your core audience.</li>
             <li>Talent In front of the camera and behind it - ie. make-up artist,
             drone operator, etc.</li>
             <li>Equipment - Based on type of imagery desired, may need special lenses,
             special or multiple cameras, green screen, or studio space...</li>
-            <li>Post-Production Needs - </li>
+            <li>Post-Production - </li>
           </ul>
         </p>
       </Box>
