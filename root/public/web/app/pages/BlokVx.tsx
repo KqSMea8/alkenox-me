@@ -9,13 +9,10 @@ import { Flex, Link as Href, Image, Box, Card, Heading, Text } from 'rebass';
 const BlokVx: React.SFC<{}> = () => {
   return (
     <Flex flexWrap="wrap">
-        <Heading width={1} textAlign='center' fontSize={[3, 4, 5]} mt={5} py={3}>Video Production</Heading>
-        <Heading width={1} textAlign='center' fontSize={[3, 4,]}>Web Video</Heading>
+      <Heading width={1} textAlign='center' fontSize={[3, 4, 5]} mt={5} py={3}>Video Production</Heading>
+      <Heading width={1} textAlign='center' fontSize={[3, 4,]}>Web Video</Heading>
 
-
-
-
-      <Box width={3/4} mx='auto' py={4} fontSize={3}>
+      <Box width={1/2} mx='auto' py={4} fontSize={3}>
         <p>
           Where ever you turn, the online world has become filled with web videos,
           created to explain products, services, and tell stories to anyone willing
@@ -50,10 +47,10 @@ const BlokVx: React.SFC<{}> = () => {
       <br />
 
 
-    <Heading width={1} textAlign='center' mt={5} fontSize={[3, 4, 5]}>Our Process</Heading>
+      <Heading width={1} textAlign='center' mt={5} fontSize={[3, 4, 5]}>Our Process</Heading>
 
 
-      <Box width={3/4} mx='auto' fontSize={3}>
+      <Box width={1/2} mx='auto' fontSize={3}>
 
         <h3>Pre-Production</h3>
 
@@ -72,31 +69,29 @@ const BlokVx: React.SFC<{}> = () => {
         all the shots that we need to create your story.</p>
 
         <h3>Post-Production</h3>
-        <p>Where it all comes together into the final product. We
-        cut the footage together. We beautify the footage as much as possible with
-        stabilization, smooth transitions, and color enhancement. We add in any
-        motion graphics or  requested.</p>
+        <p>Where it all comes together to create the final product. We
+        cut the footage together, beautify the footage, and add some motion graphics
+        where you have deemed necessary. </p>
 
       </Box>
 
 
-      <Box width={3/4} alignContent='center' mx='auto' py={3} fontSize={3}>
-        <h2>The Cost</h2>
 
+    <Heading width={1} textAlign='center' mx='auto' py={3} fontSize={[3, 4, 5]}>The Cost</Heading>
 
+      <Box width={1/2} mx='auto' fontSize={3}>
         <p> Each part of the production process incurs its costs, which is why in video
         production, when asked for an average price, the answer always has to be "It depends...":
           <ul>
             <li>Time - Needed for Pre-Production, Production, and Post</li>
-            <li>Talent - In front of the camera and behind it. (ie. make-up artist, drone operator, etc.)</li>
-            <li>Equipment - Based on type of imagery desired, may need special lenses, special
-            or multiple cameras, green screen, or studio space...</li>
-            <li>Post-Production - </li>
+            <li>Talent In front of the camera and behind it - ie. make-up artist,
+            drone operator, etc.</li>
+            <li>Equipment - Based on type of imagery desired, may need special lenses,
+            special or multiple cameras, green screen, or studio space...</li>
+            <li>Post-Production Needs - </li>
           </ul>
         </p>
       </Box>
-
-
 
     </Flex>
   );
