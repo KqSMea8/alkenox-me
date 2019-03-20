@@ -8,7 +8,7 @@ import { Modal, Button } from 'antd';
 import { Flex, Link as Href, Image, Box, Card, Heading, Text } from 'rebass';
 
 
-const VideoPrices = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Video%20Production%20Pkgs.png?raw=true";
+const VideoPrices = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/BasicVideoProdPkgs.png?raw=true";
 
 
 const BlokVx: React.SFC<{}> = () => {
@@ -59,10 +59,10 @@ const BlokVx: React.SFC<{}> = () => {
 
         <h3>Pre-Production</h3>
 
-        <p> We come together and figure out what it is you
-        will need, get you a quote on how much it will cost to effectively produce
-        your project, and sort out the shooting schedule with the script that you
-        will also either provide us with or that we will help you write. This is
+        <p> We come together and figure out what it is you need, get you a quote
+        on how much it will cost to effectively produce your project, and sort out
+        the shooting schedule with the script that you will either provide us with
+        or that we will help you write. This is
         the most important part of any production process. Without good planning,
         the entire project can lose its focus and fall apart very quickly.
         </p>
