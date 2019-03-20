@@ -3,8 +3,13 @@ import * as React from 'react';
 import ReactPlayer from 'react-player';
 
 import {useSpring, animated} from 'react-spring';
+import { Modal, Button } from 'antd';
 
 import { Flex, Link as Href, Image, Box, Card, Heading, Text } from 'rebass';
+
+
+const VideoPrices = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/Video%20Production%20Pkgs.png?raw=true";
+
 
 const BlokVx: React.SFC<{}> = () => {
   return (
@@ -66,12 +71,20 @@ const BlokVx: React.SFC<{}> = () => {
 
         <p>We embark upon what we have planned out for our shooting
         schedule. We arrive on location, with rehearsed talent, and begin collecting
-        all the shots that we need to create your story.</p>
+        all the shots and audio that we need to create your video. In some cases,
+        certain audio and/or images may be acquired or created in post-production.
+        Any kind of motion graphics, sound effects, voice-overs, or visual effects
+        would be completed in Post.</p>
 
         <h3>Post-Production</h3>
-        <p>Where it all comes together to create the final product. We
-        cut the footage together, beautify the footage, and add some motion graphics
-        where you have deemed necessary. </p>
+        <p>Here is where we log all the footage and photographs if there are any
+        before we begin editing. The time it takes to log everything depends on how
+        much footage we have gathered. Basic video editing can take from 30 minutes
+        to an hour for each minute of finished video. Basic video editing is finding
+        the best shots, cutting them together, and adding in some basic transitions.
+        More advanced editing can take much longer because now we are talking about
+        adding in animations, visual effects, and compositing. Essentially, the more
+        complex a video is, the more time and money it will require.</p>
 
       </Box>
 
@@ -80,20 +93,25 @@ const BlokVx: React.SFC<{}> = () => {
     <Heading width={1} textAlign='center' mx='auto' py={3} fontSize={[3, 4, 5]}>Pricing</Heading>
 
       <Box width={1/2} mx='auto' fontSize={3}>
-        <p> The Cost of a production depends on what kind of video you need:
+        <p> Types of Videos:
+
           <ul>
-            <li><Link href='./VideoPrices.tsx'> Branded Video </Link> - Typical length is under 
-            60 seconds and targets your core audience.</li>
-            <li>Talent In front of the camera and behind it - ie. make-up artist,
-            drone operator, etc.</li>
-            <li>Equipment - Based on type of imagery desired, may need special lenses,
-            special or multiple cameras, green screen, or studio space...</li>
+            <li> Branded Video - Under 60 seconds and targets your core audience.</li>
+            <li> Commercial Video Ads - 30 seconds or less, Strong Branding Content,
+            Builds excitement and gets people talking about your product or services,
+            Strong call-to-action, and Entertaining enough to be shared. </li>
+            <li>  </li>
             <li>Post-Production - </li>
           </ul>
         </p>
       </Box>
 
+      <Flex flexWrap="wrap" width={3/4} mx='auto' >
+      <Box width={3/4} mx='auto' py={3} px={5} >
+      <img className="fluid" src={VideoPrices} />
+    </Box>
     </Flex>
+  </Flex>
   );
 };
 
