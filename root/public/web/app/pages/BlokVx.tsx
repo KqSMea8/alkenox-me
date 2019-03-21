@@ -99,12 +99,18 @@ const BlokVx: React.SFC<{}> = () => {
         <p>
 
           <ul>
-            <li> Branded Video - Under 60 seconds and targets your core audience.</li>
-            <li> Commercial Video Ads - 30 seconds or less, Strong Branding Content,
-            Builds excitement and gets people talking about your product or services,
-            Strong call-to-action, and Entertaining enough to be shared. </li>
-            <li>  </li>
-            <li>Post-Production - </li>
+            <li> Branded Video - Under 60 seconds and Builds Awareness</li>
+            <br />
+            <li> Commercial Video - 30 seconds or less and generates awareness/excitement </li>
+            <br />
+            <li> Company Story Video - 3 minutes or less and used in the "About Us" or
+            "Our Team" section of your website </li>
+            <br />
+            <li> Explainer Video - 2 minutes or less and designed to explain your company,
+            product, service, or subject </li>
+            <br />
+            <li>Customer Testimonial Video - 3 minutes or less and are authentic accounts
+            of how your products or services helped your customer</li>
           </ul>
         </p>
       </Box>
