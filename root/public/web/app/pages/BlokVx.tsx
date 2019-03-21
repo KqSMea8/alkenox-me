@@ -59,6 +59,8 @@ const BlokVx: React.SFC<{}> = () => {
 
         <h3>Pre-Production</h3>
 
+
+
         <p> We come together and figure out what it is you need, get you a quote
         on how much it will cost to effectively produce your project, and sort out
         the shooting schedule with the script that you will either provide us with
@@ -90,10 +92,11 @@ const BlokVx: React.SFC<{}> = () => {
 
 
 
-    <Heading width={1} textAlign='center' mx='auto' py={3} fontSize={[3, 4, 5]}>Pricing</Heading>
+    <Heading width={1} textAlign='center' mx='auto' py={3} fontSize={[3, 4, 5]}>Types of Videos</Heading>
 
-      <Box width={1/2} mx='auto' fontSize={3}>
-        <p> Types of Videos:
+    <Flex flexWrap="wrap" width={2/3} mx='auto' >
+      <Box width={1/2} mx='auto' px={2} fontSize={3}>
+        <p>
 
           <ul>
             <li> Branded Video - Under 60 seconds and targets your core audience.</li>
@@ -106,11 +109,12 @@ const BlokVx: React.SFC<{}> = () => {
         </p>
       </Box>
 
-      <Flex flexWrap="wrap" width={3/4} mx='auto' >
-      <Box width={3/4} mx='auto' py={3} px={5} >
+
+    <Box width={1/2} mx='auto' py={3} px={2}>
       <img className="fluid" src={VideoPrices} />
     </Box>
     </Flex>
+
   </Flex>
   );
 };
