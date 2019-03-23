@@ -26,7 +26,7 @@ export default class LabelBlok extends React.Component<IBlok> {
           borderRadius={this.props.bRad}
           bg={this.props.tint}
           width={this.props.width}
-          textAlign="Center"
+          textAlign="center"
           color="inherit"
         >
           {this.props.label}
