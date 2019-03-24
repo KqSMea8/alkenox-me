@@ -10,9 +10,10 @@ import { Flex, Link as Href, Image, Box, Card, Heading, Text } from 'rebass';
 
 
 const VideoPrices = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/BasicVideoProdPkgs.png?raw=true";
-const LiveCamera = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/record-camera-live-product-reflex-camera-digital-camera-1050502-pxhere.com.jpg?raw=true"
+const LiveCamera = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/blur-camera-camera-equipment-639090.jpg?raw=true"
 const Teamwork = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/achievement-agreement-arms-1068523.jpg?raw=true"
 const Editing = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/computer-connection-data-1188751.jpg?raw=true"
+const Production = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/action-clapper-film-director-1117132.jpg?raw=true"
 
 
 const BlokVx: React.SFC<{}> = () => {
@@ -96,12 +97,12 @@ const BlokVx: React.SFC<{}> = () => {
         schedule. We arrive on location, with rehearsed talent, and begin collecting
         all the shots and audio that we need to create your video. In some cases,
         certain audio and/or images may be acquired or created in post-production.
-        Any kind of motion graphics, sound effects, voice-overs, or visual effects
+        Any kind of motion graphics, sound effects, v4oice-overs, or visual effects
         would be completed in Post.
         </Text>
 
         <Box width={1/2} mx='auto' my='auto' pt={4} px={2}>
-          <img className="fluid" src={Teamwork} />
+          <img className="fluid" src={Production} />
         </Box>
       </Flex>
 
@@ -127,9 +128,9 @@ const BlokVx: React.SFC<{}> = () => {
 
 
 
-    <Heading width={1} textAlign='center' mx='auto' pt={4} fontSize={[3, 4, 5]}>Types of Videos</Heading>
+    <Heading width={1} textAlign='center' mx='auto' pt={5} fontSize={[3, 4, 5]}>Types of Videos</Heading>
 
-    <Flex flexWrap="wrap" width={2/3} mx='auto'>
+    <Flex flexWrap="wrap" width={6/8} mx='auto' my='auto'>
       <Box width={1/2} mx='auto' px={2} fontSize={3} pb={5} pt={5}>
           <ul>
             <li> Branded Video - Under 60 seconds and Builds Awareness</li>
@@ -148,18 +149,15 @@ const BlokVx: React.SFC<{}> = () => {
             <li> Movie Trailer - 2 minutes 30 seconds or less (average full length trailer) and drums
             up buzz and excitement for your movie </li>
           </ul>
-
-
-
       </Box>
 
 
-    <Box width={1/4} mx='auto' py={5} px={2}>
-      <img className="fluid" src={LiveCamera} />
+    <Box width={1/2} mx='auto' my='auto' px={2}>
+      <backgroundImage className="fluid" src={LiveCamera} />
     </Box>
     </Flex>
 
-    <Box width={1/2} mx='auto' fontSize={4} py={5}>
+    <Box width={960} mx='auto' fontSize={4} py={5}>
       <Text> Contact Us for a free quote. </Text>
     </Box>
 
