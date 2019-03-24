@@ -15,31 +15,30 @@ const Teamwork = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/ac
 
 const BlokVx: React.SFC<{}> = () => {
   return (
-    <Flex flexWrap="wrap">
+    <Flex flexWrap="wrap" width={1} mx='auto'>
       <Heading width={1} textAlign='center' fontSize={[3, 4, 5]} mt={5} py={3}>Video Production</Heading>
       <Heading width={1} textAlign='center' fontSize={[3, 4,]}>Web Video</Heading>
-    
 
-      <Box width={1/2} mx='auto' py={4} fontSize={3}>
-        <p>
+        <Text width={6/8} mx='auto' pt={4} fontSize={3}>
           Where ever you turn on the internet, you find yourself faced with at least
           one web video on almost every site you visit, that were
           created to explain products, services, and tell stories to anyone willing
           to stick around and watch. Most lazy web surfers tend to stop when faced
           with a video, which is why web videos have become a way to capture your
           visitors' attention and convert them into customers.
-        </p>
+        </Text>
 
-        <p>
+        <Text width={6/8} mx='auto' fontSize={3}>
           Whether you need a short internet commercial for your business, have a
           story to tell, or have video and images that you need turned into
           something with purpose; we are here to help.
-        </p>
-      </Box>
+        </Text>
 
 
 
-      <Box mx='auto' py={2} fontSize={3}>
+
+    <Flex flexWrap="wrap" width={6/8} mx='auto'>
+      <Box width={2/3} mx='auto' py={4}>
         <ReactPlayer
           url="https://github.com/alkenox/alkenox-me-videos/blob/master/trailer-mosaic.mp4?raw=true"
           width="100%"
@@ -51,29 +50,28 @@ const BlokVx: React.SFC<{}> = () => {
         />
       </Box>
 
-
-      <Box mx='auto' py={2} fontSize={3}>
-        <Text pb={5}>Movie Trailer for the Indie Feature Film "Mosaic" with all original scoring and
-        3D Motion Graphics.</Text>
-      </Box>
-
+        <Text width={6/8} mx='auto' pb={5} textAlign='center' fontSize={3}>Movie Trailer for the Indie Feature Film "Mosaic" with all original scoring and
+        3D Motion Graphics.
+        </Text>
+    </Flex>
 
 
-    <Flex flexWrap="wrap" width={2/3} mx='auto' >
+
+    <Flex flexWrap="wrap" width={6/8} mx='auto'>
       <Box width={1/2} mx='auto' fontSize={3}>
         <Heading width={1} textAlign='center' mt={5} fontSize={[3, 4, 5]}>Our Process</Heading>
       </Box>
     </Flex>
 
-    <Flex>
-        <h3>Pre-Production</h3>
+    <Flex flexWrap="wrap" width={6/8} mx='auto' pt={4}>
+      <Heading width={6/8} mx='auto' fontSize={[3, 4]} textAlign='center' >Pre-Production</Heading>
 
-        <Box width={2/3} mx='auto' py={5} px={2} >
+        <Box width={1/2} mx='auto' py={3} px={2}>
           <img className="fluid" src={Teamwork} />
         </Box>
 
 
-        <Text width={2/3} mx='auto' py={5} px={2}>
+        <Text width={1/2} mx='auto' py={3} px={2} fontSize={3}>
         We come together and figure out what it is you need, get you a quote
         on how much it will cost to effectively produce your project, and sort out
         the shooting schedule with the script that you will either provide us with
@@ -84,40 +82,49 @@ const BlokVx: React.SFC<{}> = () => {
       </Flex>
 
 
-      <Flex flexWrap="wrap" width={2/3} mx='auto' >
-        <Box width={1/2} mx='auto' fontSize={3}>
-        <h3>Production</h3>
+      <Flex flexWrap="wrap" width={6/8} mx='auto' pt={4}>
+          <Heading width={6/8} mx='auto' fontSize={[3, 4]} textAlign='center'>Production</Heading>
 
-        <p>We embark upon what we have planned out for our shooting
+        <Text width={1/2} mx='auto' py={3} px={2} fontSize={3}>
+        We embark upon what we have planned out for our shooting
         schedule. We arrive on location, with rehearsed talent, and begin collecting
         all the shots and audio that we need to create your video. In some cases,
         certain audio and/or images may be acquired or created in post-production.
         Any kind of motion graphics, sound effects, voice-overs, or visual effects
-        would be completed in Post.</p>
+        would be completed in Post.
+        </Text>
+
+        <Box width={1/2} mx='auto' py={3} px={2}>
+          <img className="fluid" src={Teamwork} />
         </Box>
       </Flex>
 
-      <Flex flexWrap="wrap" width={2/3} mx='auto' >
-        <Box width={1/2} mx='auto' fontSize={3}>
-        <h3>Post-Production</h3>
-        <p>Here is where we log all the footage and photographs if there are any
+      <Flex flexWrap="wrap" width={6/8} mx='auto' pt={4}>
+        <Heading width={6/8} mx='auto' fontSize={[3, 4]} textAlign='center'>Post-Production</Heading>
+
+          <Box width={1/2} mx='auto' py={3} px={2}>
+            <img className="fluid" src={Teamwork} />
+          </Box>
+
+
+        <Text width={1/2} mx='auto' py={3} px={2} fontSize={3}>
+        Here is where we log all the footage and photographs if there are any
         before we begin editing. The time it takes to log everything depends on how
         much footage we have gathered. Basic video editing can take from 30 minutes
         to an hour for each minute of finished video. Basic video editing is finding
         the best shots, cutting them together, and adding in some basic transitions.
         More advanced editing can take much longer because now we are talking about
         adding in animations, visual effects, and compositing. Essentially, the more
-        complex a video is, the more time and money it will require.</p>
-
-      </Box>
-    </Flex>
+        complex a video is, the more time and money it will require.
+        </Text>
+      </Flex>
 
 
 
     <Heading width={1} textAlign='center' mx='auto' pt={4} fontSize={[3, 4, 5]}>Types of Videos</Heading>
 
-    <Flex flexWrap="wrap" width={2/3} mx='auto' >
-      <Box width={1/2} mx='auto' px={2} fontSize={3} pb={5} pt={5} >
+    <Flex flexWrap="wrap" width={2/3} mx='auto'>
+      <Box width={1/2} mx='auto' px={2} fontSize={3} pb={5} pt={5}>
         <p>
 
           <ul>
@@ -141,12 +148,12 @@ const BlokVx: React.SFC<{}> = () => {
       </Box>
 
 
-    <Box width={1/4} mx='auto' py={5} px={2} >
+    <Box width={1/4} mx='auto' py={5} px={2}>
       <img className="fluid" src={LiveCamera} />
     </Box>
     </Flex>
 
-    <Box width={1/2} mx='auto' fontSize={4} pb={5} >
+    <Box width={1/2} mx='auto' fontSize={4} pb={5}>
       <Text> Contact Us for a free quote. </Text>
     </Box>
 

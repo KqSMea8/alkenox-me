@@ -4,6 +4,7 @@ import { Flex, Link as Href, Image, Box, Card, Heading, Text } from 'rebass';
 import styled from '@emotion/styled'
 
 const Fancy = styled.div `
+
 `
 
 const FancyDiv: React.SFC<{}> = (props) => {
