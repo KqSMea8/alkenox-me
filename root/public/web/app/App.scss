@@ -7,6 +7,9 @@ $dark: rgba(0,0,0,1);
 $white: rgba(#fff,1);
 $darkTint: rgba(0,0,0,.85);
 
+$LiveCamera: 'https://github.com/Alkenox-ME/alkenox-me-images/blob/master/blur-camera-camera-equipment-639090.jpg?raw=true'
+
+
 $logo: 'https://github.com/alkenox/alkenox-me-images/blob/master/logo.png?raw=true';
 
 $sans: 'system-ui, sans-serif';
@@ -14,6 +17,16 @@ $mono: 'Menlo, monospace';
 
 @import './global/antd.scss';
 @import './global/sanitize.scss';
+
+
+.pricebg
+{
+    background-image: $LiveCamera;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
 
 .prime
 {

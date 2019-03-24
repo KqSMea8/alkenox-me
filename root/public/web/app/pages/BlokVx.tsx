@@ -114,7 +114,7 @@ const BlokVx: React.SFC<{}> = () => {
           </Box>
 
 
-        <Text width={1/2} mx='auto' my='auto' px={2} pt={4} fontSize={3}>
+        <Text width={1/2} mx='auto' my='auto' px={2} pt={4} fontSize={[3]}>
         Here is where we log all the footage and photographs if there are any
         before we begin editing. The time it takes to log everything depends on how
         much footage we have gathered. Basic video editing can take from 30 minutes
@@ -153,7 +153,7 @@ const BlokVx: React.SFC<{}> = () => {
 
 
     <Box width={1/2} mx='auto' my='auto' px={2}>
-      <backgroundImage className="fluid" src={LiveCamera} />
+      
     </Box>
     </Flex>
 
