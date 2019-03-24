@@ -12,14 +12,16 @@ import { Flex, Link as Href, Image, Box, Card, Heading, Text } from 'rebass';
 const VideoPrices = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/BasicVideoProdPkgs.png?raw=true";
 const LiveCamera = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/record-camera-live-product-reflex-camera-digital-camera-1050502-pxhere.com.jpg?raw=true"
 const Teamwork = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/achievement-agreement-arms-1068523.jpg?raw=true"
+const Editing = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/computer-connection-data-1188751.jpg?raw=true"
+
 
 const BlokVx: React.SFC<{}> = () => {
   return (
     <Flex flexWrap="wrap" width={1} mx='auto'>
       <Heading width={1} textAlign='center' fontSize={[3, 4, 5]} mt={5} py={3}>Video Production</Heading>
       <Heading width={1} textAlign='center' fontSize={[3, 4,]}>Web Video</Heading>
-
-        <Text width={6/8} mx='auto' pt={4} fontSize={3}>
+      <Box width={960} mx='auto'>
+        <Text width={960} mx='auto' pt={4} fontSize={3}>
           Where ever you turn on the internet, you find yourself faced with at least
           one web video on almost every site you visit, that were
           created to explain products, services, and tell stories to anyone willing
@@ -27,13 +29,17 @@ const BlokVx: React.SFC<{}> = () => {
           with a video, which is why web videos have become a way to capture your
           visitors' attention and convert them into customers.
         </Text>
+      </Box>
 
-        <Text width={6/8} mx='auto' fontSize={3}>
+
+
+      <Box width={960} mx='auto'>
+        <Text width={960} mx='auto' fontSize={3} py={4}>
           Whether you need a short internet commercial for your business, have a
           story to tell, or have video and images that you need turned into
           something with purpose; we are here to help.
         </Text>
-
+      </Box>
 
 
 
@@ -57,8 +63,8 @@ const BlokVx: React.SFC<{}> = () => {
 
 
 
-    <Flex flexWrap="wrap" width={6/8} mx='auto'>
-      <Box width={1/2} mx='auto' fontSize={3}>
+    <Flex flexWrap="wrap" width={960} mx='auto'>
+      <Box width={960} mx='auto' fontSize={3}>
         <Heading width={1} textAlign='center' mt={5} fontSize={[3, 4, 5]}>Our Process</Heading>
       </Box>
     </Flex>
@@ -66,12 +72,12 @@ const BlokVx: React.SFC<{}> = () => {
     <Flex flexWrap="wrap" width={6/8} mx='auto' pt={4}>
       <Heading width={6/8} mx='auto' fontSize={[3, 4]} textAlign='center' >Pre-Production</Heading>
 
-        <Box width={1/2} mx='auto' py={3} px={2}>
+        <Box width={1/2} mx='auto' my='auto' pt={4} px={2}>
           <img className="fluid" src={Teamwork} />
         </Box>
 
 
-        <Text width={1/2} mx='auto' py={3} px={2} fontSize={3}>
+        <Text width={1/2} mx='auto' my='auto' pt={4} px={2} fontSize={3} >
         We come together and figure out what it is you need, get you a quote
         on how much it will cost to effectively produce your project, and sort out
         the shooting schedule with the script that you will either provide us with
@@ -82,10 +88,10 @@ const BlokVx: React.SFC<{}> = () => {
       </Flex>
 
 
-      <Flex flexWrap="wrap" width={6/8} mx='auto' pt={4}>
+      <Flex flexWrap="wrap" width={6/8} mx='auto' my='auto' pt={4}>
           <Heading width={6/8} mx='auto' fontSize={[3, 4]} textAlign='center'>Production</Heading>
 
-        <Text width={1/2} mx='auto' py={3} px={2} fontSize={3}>
+        <Text width={1/2} mx='auto' my='auto' px={2} pt={4} fontSize={3}>
         We embark upon what we have planned out for our shooting
         schedule. We arrive on location, with rehearsed talent, and begin collecting
         all the shots and audio that we need to create your video. In some cases,
@@ -94,7 +100,7 @@ const BlokVx: React.SFC<{}> = () => {
         would be completed in Post.
         </Text>
 
-        <Box width={1/2} mx='auto' py={3} px={2}>
+        <Box width={1/2} mx='auto' my='auto' pt={4} px={2}>
           <img className="fluid" src={Teamwork} />
         </Box>
       </Flex>
@@ -102,12 +108,12 @@ const BlokVx: React.SFC<{}> = () => {
       <Flex flexWrap="wrap" width={6/8} mx='auto' pt={4}>
         <Heading width={6/8} mx='auto' fontSize={[3, 4]} textAlign='center'>Post-Production</Heading>
 
-          <Box width={1/2} mx='auto' py={3} px={2}>
-            <img className="fluid" src={Teamwork} />
+          <Box width={1/2} mx='auto' my='auto' pt={4} px={2}>
+            <img className="fluid" src={Editing} />
           </Box>
 
 
-        <Text width={1/2} mx='auto' py={3} px={2} fontSize={3}>
+        <Text width={1/2} mx='auto' my='auto' px={2} pt={4} fontSize={3}>
         Here is where we log all the footage and photographs if there are any
         before we begin editing. The time it takes to log everything depends on how
         much footage we have gathered. Basic video editing can take from 30 minutes
@@ -125,8 +131,6 @@ const BlokVx: React.SFC<{}> = () => {
 
     <Flex flexWrap="wrap" width={2/3} mx='auto'>
       <Box width={1/2} mx='auto' px={2} fontSize={3} pb={5} pt={5}>
-        <p>
-
           <ul>
             <li> Branded Video - Under 60 seconds and Builds Awareness</li>
             <br />
@@ -144,7 +148,9 @@ const BlokVx: React.SFC<{}> = () => {
             <li> Movie Trailer - 2 minutes 30 seconds or less (average full length trailer) and drums
             up buzz and excitement for your movie </li>
           </ul>
-        </p>
+
+
+
       </Box>
 
 
@@ -153,7 +159,7 @@ const BlokVx: React.SFC<{}> = () => {
     </Box>
     </Flex>
 
-    <Box width={1/2} mx='auto' fontSize={4} pb={5}>
+    <Box width={1/2} mx='auto' fontSize={4} py={5}>
       <Text> Contact Us for a free quote. </Text>
     </Box>
 
