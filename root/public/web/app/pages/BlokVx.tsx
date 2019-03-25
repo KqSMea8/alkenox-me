@@ -19,16 +19,17 @@ const Production = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/
 const BlokVx: React.SFC<{}> = () => {
   return (
     <Flex flexWrap="wrap" width={1} mx='auto'>
-      <Heading width={1} textAlign='center' fontSize={[3, 4, 5]} mt={5} py={3}>Video Production</Heading>
-      <Heading width={1} textAlign='center' fontSize={[3, 4,]}>Web Video</Heading>
+      <Heading width={1} textAlign='center' fontSize={[3, 4, 5]} mt={5} py={3}>
+        Video Production
+      </Heading>
+      <Heading width={1} textAlign='center' fontSize={[3, 4,]}>
+        Web Video
+      </Heading>
+
       <Box width={960} mx='auto'>
         <Text width={960} mx='auto' pt={4} fontSize={3}>
-          Where ever you turn on the internet, you find yourself faced with at least
-          one web video on almost every site you visit, that were
-          created to explain products, services, and tell stories to anyone willing
-          to stick around and watch. Most lazy web surfers tend to stop when faced
-          with a video, which is why web videos have become a way to capture your
-          visitors' attention and convert them into customers.
+          Where ever you turn on the internet, you find yourself faced with at least one web video on almost every site you visit, that were
+          created to explain products, services, and tell stories to anyone willing to stick around and watch. Most lazy web surfers tend to stop when faced with a video, which is why web videos have become a way to capture your visitors' attention and convert them into customers.
         </Text>
       </Box>
 
@@ -57,8 +58,7 @@ const BlokVx: React.SFC<{}> = () => {
         />
       </Box>
 
-        <Text width={6/8} mx='auto' pb={5} textAlign='center' fontSize={3}>Movie Trailer for the Indie Feature Film "Mosaic" with all original scoring and
-        3D Motion Graphics.
+        <Text width={6/8} mx='auto' pb={5} textAlign='center' fontSize={3}>Movie Trailer for the Indie Feature Film "Mosaic" with all original scoring and 3D Motion Graphics.
         </Text>
     </Flex>
 
@@ -80,11 +80,7 @@ const BlokVx: React.SFC<{}> = () => {
 
         <Text width={1/2} mx='auto' my='auto' pt={4} px={2} fontSize={3} >
         We come together and figure out what it is you need, get you a quote
-        on how much it will cost to effectively produce your project, and sort out
-        the shooting schedule with the script that you will either provide us with
-        or that we will help you write. This is
-        the most important part of any production process. Without good planning,
-        the entire project can lose its focus and fall apart very quickly.
+        on how much it will cost to effectively produce your project, and sort out the shooting schedule with the script that you will either provide us with or that we will help you write. This is the most important part of any production process. Without good planning, the entire project can lose its focus and fall apart very quickly.
         </Text>
       </Flex>
 
@@ -94,11 +90,7 @@ const BlokVx: React.SFC<{}> = () => {
 
         <Text width={1/2} mx='auto' my='auto' px={2} pt={4} fontSize={3}>
         We embark upon what we have planned out for our shooting
-        schedule. We arrive on location, with rehearsed talent, and begin collecting
-        all the shots and audio that we need to create your video. In some cases,
-        certain audio and/or images may be acquired or created in post-production.
-        Any kind of motion graphics, sound effects, v4oice-overs, or visual effects
-        would be completed in Post.
+        schedule. We arrive on location, with rehearsed talent, and begin collecting all the shots and audio that we need to create your video. In some cases, certain audio and/or images may be acquired or created in post-production. Any kind of motion graphics, sound effects, v4oice-overs, or visual effects would be completed in Post.
         </Text>
 
         <Box width={1/2} mx='auto' my='auto' pt={4} px={2}>
@@ -137,24 +129,17 @@ const BlokVx: React.SFC<{}> = () => {
             <br />
             <li> Commercial Video - 30 seconds or less and generates awareness/excitement </li>
             <br />
-            <li> Company Story Video - 3 minutes or less and used in the "About Us" or
-            "Our Team" section of your website </li>
+            <li> Company Story Video - 3 minutes or less and used in the "About Us" or "Our Team" section of your website </li>
             <br />
-            <li> Explainer Video - 2 minutes or less and designed to explain your company,
-            product, service, or subject </li>
+            <li> Explainer Video - 2 minutes or less and designed to explain your company, product, service, or subject </li>
             <br />
-            <li> Customer Testimonial Video - 3 minutes or less and are authentic accounts
-            of how your products or services helped your customer </li>
+            <li> Customer Testimonial Video - 3 minutes or less and are authentic accounts of how your products or services helped your customer </li>
             <br />
-            <li> Movie Trailer - 2 minutes 30 seconds or less (average full length trailer) and drums
-            up buzz and excitement for your movie </li>
+            <li> Movie Trailer - 2 minutes 30 seconds or less (average full length trailer) and drums up buzz and excitement for your movie </li>
           </ul>
       </Box>
 
 
-    <Box width={1/2} mx='auto' my='auto' px={2}>
-      
-    </Box>
     </Flex>
 
     <Box width={960} mx='auto' fontSize={4} py={5}>
