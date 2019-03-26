@@ -1,8 +1,8 @@
-import * as React from 'react';
+import React from 'react';
 
 import ReactPlayer from 'react-player';
 
-import FancyDiv from '../components/fancydiv'
+import FancyDiv from '../components/fancydiv';
 
 import { Modal, Button } from 'antd';
 
