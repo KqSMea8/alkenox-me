@@ -1,12 +1,9 @@
 import * as React from 'react';
-
 import ReactPlayer from 'react-player';
-
 import FancyDiv from '../components/fancydiv';
-
 import { Modal, Button } from 'antd';
-
 import { Flex, Link as Href, Image, Box, Card, Heading, Text } from 'rebass';
+import Bounce from 'react-reveal/Bounce';
 
 
 const VideoPrices = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/BasicVideoProdPkgs.png?raw=true";
@@ -108,13 +105,7 @@ const BlokVx: React.SFC<{}> = () => {
 
         <Text width={1/2} mx='auto' my='auto' px={2} pt={4} fontSize={[3]}>
         Here is where we log all the footage and photographs if there are any
-        before we begin editing. The time it takes to log everything depends on how
-        much footage we have gathered. Basic video editing can take from 30 minutes
-        to an hour for each minute of finished video. Basic video editing is finding
-        the best shots, cutting them together, and adding in some basic transitions.
-        More advanced editing can take much longer because now we are talking about
-        adding in animations, visual effects, and compositing. Essentially, the more
-        complex a video is, the more time and money it will require.
+        before we begin editing. The time it takes to log everything depends on how much footage we have gathered. Basic video editing can take from 30 minutes to an hour for each minute of finished video. Basic video editing is finding the best shots, cutting them together, and adding in some basic transitions. More advanced editing can take much longer because now we are talking about adding in animations, visual effects, and compositing. Essentially, the more complex a video is, the more time and money it will require.
         </Text>
       </Flex>
 
