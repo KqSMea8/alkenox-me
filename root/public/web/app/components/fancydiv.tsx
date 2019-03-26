@@ -8,6 +8,10 @@ const VxPriceBG = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/b
 interface IFancy {
   width?: string;
   heading?: string;
+  height?: string;
+  tint?: string;
+  bradius?: number;
+
 }
 
 const Fancy = styled.div`

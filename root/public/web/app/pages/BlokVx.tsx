@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 
 import ReactPlayer from 'react-player';
 
@@ -143,7 +143,7 @@ const BlokVx: React.SFC<{}> = () => {
     </Flex>
 
     <Box width={960} mx='auto' fontSize={4} py={5}>
-      <Text> Contact Us for a free quote. </Text>
+      <Text textAlign='center'> Contact Us for a free quote. </Text>
     </Box>
 
   </Flex>
