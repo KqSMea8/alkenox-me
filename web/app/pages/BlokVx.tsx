@@ -134,8 +134,8 @@ const BlokVx: React.SFC<{}> = () => {
 
     <Heading width={1} textAlign='center' mx='auto' pt={5} fontSize={[3, 4, 5]}>Types of Videos</Heading>
 
-    <Flex flexWrap="wrap" width={[1, 1, 11/12, 1/2]} mx='auto' my='auto'>
-      <Box width={1/2} mx='auto' px={2} fontSize={3} pb={5} pt={5}>
+    <Flex flexWrap="wrap" width={[1, 1, 11/12, 8/12]} mx='auto' my='auto'>
+      <Box width={8/12} mx='auto' px={2} fontSize={3} pb={5} pt={5}>
           <ul>
             <li> Branded Video - Under 60 seconds and Builds Awareness</li>
             <br />
