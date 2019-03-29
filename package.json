@@ -1,0 +1,10 @@
+{
+  "name": "alkenox-me",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/Alkenox-ME/alkenox-me.git",
+  "author": "KCypher <kriss@alkeno-me.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {"dev":"cd web && yarn dev && cd .."}
+}

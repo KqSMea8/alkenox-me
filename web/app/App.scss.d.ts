@@ -1986,6 +1986,7 @@ export const uploadAnimateIn: string;
 export const uploadAnimateOut: string;
 export const uploadAnimateInlineIn: string;
 export const uploadAnimateInlineOut: string;
+export const headingSz: string;
 export const rad6: string;
 export const p4: string;
 export const centerTxt: string;

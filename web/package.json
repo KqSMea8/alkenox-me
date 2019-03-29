@@ -11,7 +11,7 @@
     ">0.2%", "not dead", "not ie <= 11", "not op_mini all"
   ],
   "scripts": {
-    "dev": "yarn prep:components && parcel ./app/index.html -d ../dev/build",
+    "dev": "yarn prep:components && parcel ./app/index.html -d ./dev/build",
     "build": "yarn clean && yarn prep:components && yarn build:client",
     "prep:components": "imported-components app app/imported.ts",
     "build:client": "cross-env BABEL_ENV=client NODE_ENV=production parcel build ./app/index.html -d ../server/views/client --public-url /",
