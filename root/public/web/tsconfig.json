@@ -1,13 +1,37 @@
 {
-  "extends": "../../../tsconfig.json",
+  //"compileOnSave": true,
   "compilerOptions":
   {
-    "module": "es2015",
-    "rootDir": "./root/public/web",
-    "jsx": "react",
+    "target": "es5",
+    "module": "commonjs",
+    "types": [ "node", "lodash", "express" ],
+    "strict": true,
+    "rootDir": "./",
+    "outDir": "root/dist",
+    "noEmitHelpers": true,
+    "importHelpers": true,
+    "noImplicitReturns": true,
+    "removeComments": true,
+    "preserveConstEnums": true,
+    "sourceMap": true,
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "lib": [ "dom", "es2015", "es2016" ],
+    "allowSyntheticDefaultImports": true,
+    "plugins": [
+    {
+      "name": "typescript-tslint-plugin"
+    } ]
   },
-  "references": [
-  {
-    "path": [ "../core/**", "../api/**", "../tools/**", "../../root/**" ]
-  } ]
+  "files": [
+    "../types/interface.d.ts",
+    "../types/module.d.ts",
+    "../types/element.d.ts"
+  ],
+  "exclude": [
+    "node_modules", "**/node_modules"
+  ]
 }

@@ -1,0 +1,46 @@
+
+@import './vars.scss';
+.relative
+{
+    position: relative;
+}
+
+.absolute
+{
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 100%;
+}
+
+.fitImg
+{
+    object-fit: cover;
+    object-position: center;
+}
+
+.hoverOverlay
+{
+    z-index: 1;
+
+    cursor: pointer;
+    transition: .5s ease-in-out;
+
+    opacity: .2;
+    &:hover
+    {
+        transition: .5s ease-in-out;
+
+        opacity: 2;
+
+        & + .hoverImg
+        {
+            transition: .5s ease-in-out;
+
+            opacity: .2;
+        }
+    }
+}

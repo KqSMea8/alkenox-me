@@ -1,9 +1,8 @@
 import * as React from "react";
 import ReactModal from "react-modal";
 
-import styled from "@emotion/styled";
-import { Button } from "antd";
-
+import { MdClear } from "react-icons/Md";
+import { IconContext } from "react-icons";
 import LabelBlok from "./LabelBlok";
 
 interface IBlok {
@@ -83,13 +82,15 @@ class ModalBlok extends React.Component<IBlok> {
             }
           }}
         >
-          <Button
-            shape="circle"
-            icon="close"
-            size="large"
-            className="closeTrigger"
-            onClick={this.handleCloseModal}
-          />
+          <IconContext.Provider
+            value={{
+              color: "rgba(52,152,255,1)",
+              size: "2.5em",
+              className: "closeTrigger"
+            }}
+          >
+            <MdClear onClick={this.handleCloseModal} />
+          </IconContext.Provider>
           {this.props.component}
         </ReactModal>
       </span>

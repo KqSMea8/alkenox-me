@@ -1,0 +1,67 @@
+
+//Nav BTN
+.btn-nav
+{
+    padding: .5em 1em;
+
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+
+    color: $light;
+    border-color: $light;
+    background-color: $darkTint;
+
+    &:hover,
+    &:focus
+    {
+        transition: all .5s ease-in-out;
+
+        color: $richer;
+        background-color: $darkTint;
+    }
+}
+
+.nav-drawer
+{
+    background-color: $darkTint;
+}
+//----------
+
+.labelLink
+{
+    cursor: pointer;
+    transition: all 1s ease-in-out;
+    text-decoration: none;
+
+    color: $light;
+
+    &:hover,
+    &:focus
+    {
+        transition: all .5s ease-in-out;
+
+        color: $richer;
+    }
+}
+span
+{
+    border: 0;
+}
+
+.navTrigger
+{
+    line-height: .25em;
+
+    position: fixed;
+    z-index: 10000;
+
+    padding: .25em;
+
+    cursor: pointer;
+
+    color: $richer;
+    border-width: 0;
+    border-radius: 100%;
+    background-color: rgba(0,0,0,0);
+}

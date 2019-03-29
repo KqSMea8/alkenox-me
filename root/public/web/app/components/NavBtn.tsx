@@ -15,7 +15,7 @@ export default class NavBtn extends React.Component<INavBtn> {
 
   public render() {
     return (
-      <Button type='default' className="btn-nav">
+      <Button type="default" className="btn-nav">
         <Link to={this.props.link}>{this.props.label}</Link>
       </Button>
     );

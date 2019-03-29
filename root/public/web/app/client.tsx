@@ -13,7 +13,7 @@ import App from "./App";
 
 config({ ssrFadeout: true });
 
-const element = document.getElementById("app");
+const rootElement = document.getElementById("app");
 
 const app = (
   <BrowserRouter>
@@ -26,10 +26,10 @@ const app = (
 if (process.env.NODE_ENV === "production") {
   // rehydrate the bundle marks
   rehydrateMarks().then(() => {
-    ReactDOM.hydrate(app, element);
+    ReactDOM.hydrate(app, rootElement);
   });
 } else {
-  ReactDOM.render(app, element);
+  ReactDOM.render(app, rootElement);
 }
 
 // Hot reload is that easy with Parcel

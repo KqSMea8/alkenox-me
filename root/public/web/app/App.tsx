@@ -20,7 +20,7 @@ const ContactPage = importedComponent(() => import("./pages/ContactPage"));
 const App: React.SFC<{}> = () => {
   return (
     <Themed>
-      <span>
+      <Background>
         <SiteInterface>
           <Switch>
             <Route exact path="/" component={HomePage} />
@@ -29,7 +29,7 @@ const App: React.SFC<{}> = () => {
             <Redirect to="/" />
           </Switch>
         </SiteInterface>
-      </span>
+      </Background>
     </Themed>
   );
 };
