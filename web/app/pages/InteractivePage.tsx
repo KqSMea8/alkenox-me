@@ -1,23 +1,32 @@
 import * as React from 'react';
 
 import ReactPlayer from 'react-player';
-import { Fade } from "react-reveal";
+import { Fade, Bounce } from "react-reveal";
 
 import { Flex, Link as Href, Image, Box, Card, Heading, Text } from 'rebass';
+
+const TestImg = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/favicon.png?raw=true";
 
 const BlokInteractive: React.SFC<{}> = () => {
   return (
     <Flex flexWrap="wrap">
-    <Fade
-      right
+    <Bounce
+      left
       appear={true}
       enter={true}
-      exit={true}
-      duration={3000}
+      exit={false}
+      duration={1200}
       delay={200}
     >
+
+    <Box width={[1, 1, 11/12, 1/2]} mx='auto' my='auto' pt={4} px={2}>
+      <img className="fluid" src={TestImg} />
+    </Box>
+    </Bounce>
+
+
       <Box width={1}>Interactive Media</Box>
-      </Fade>
+
       <Box width={1}>
         Interactive Graphic Design Creating animated graphics for your interactive experience.
       </Box>
