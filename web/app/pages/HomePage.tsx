@@ -13,14 +13,11 @@ const MxBlok = importedComponent(() => import("../pages/BlokMx"));
 const WebBlok = importedComponent(() => import("../pages/BlokWeb"));
 const VxBlok = importedComponent(() => import("../pages/BlokVx"));
 const MotionBlok = importedComponent(() => import("../pages/BlokMotion"));
-const InteractiveBlok = importedComponent(() =>
-  import("../pages/BlokInteractive")
-);
+
 const RxBlok = importedComponent(() => import("../pages/BlokRx"));
 
 const MotionBg = "https://media.giphy.com/media/Xth5kFQm3ahg5swyBK/giphy.gif";
-const InteractiveBg =
-  "https://media.giphy.com/media/1xoqRHHLqXKNc02nM0/giphy-downsized-large.gif";
+
 const MxBg =
   "https://media.giphy.com/media/229roNqcyGIZNfWCfj/giphy-downsized-large.gif";
 const RxBg =
@@ -169,16 +166,7 @@ const HomePage: React.SFC<{}> = () => {
             duration={`${duration1}`}
             delay={`${delay6}`}
           >
-            <ModalBlok
-              label="Interactive Media"
-              bgimg={InteractiveBg}
-              tint="rgb(0,0,0)"
-              width={`${width}`}
-              height={`${height}`}
-              bradius={60}
-              close={`${close}`}
-              component={<InteractiveBlok />}
-            />
+
           </Fade>
         </Card>
 

@@ -1,9 +1,9 @@
 import * as React from 'react';
 import ReactPlayer from 'react-player';
-
+import BounceImg from '../components/bounce'
 import { Modal, Button } from 'antd';
 import { Flex, Link as Href, Image, Box, Card, Heading, Text } from 'rebass';
-import Bounce from 'react-reveal/Bounce';
+import { Bounce } from 'react-reveal';
 
 
 const VideoPrices = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/BasicVideoProdPkgs.png?raw=true";
@@ -151,6 +151,10 @@ const BlokVx: React.SFC<{}> = () => {
           </ul>
       </Box>
 
+      <Box>
+      <Bounce left>
+      <BounceImg /></Bounce>
+      </Box>
 
     </Flex>
 
