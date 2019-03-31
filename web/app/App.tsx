@@ -14,8 +14,8 @@ import Background from "./components/Background";
 import HomePage from "./pages/HomePage";
 
 const AboutPage = importedComponent(() => import("./pages/AboutPage"));
-
 const ContactPage = importedComponent(() => import("./pages/ContactPage"));
+const InteractivePage = importedComponent(() => import("./pages/InteractivePage"));
 
 const App: React.SFC<{}> = () => {
   return (
@@ -26,6 +26,7 @@ const App: React.SFC<{}> = () => {
             <Route exact path="/" component={HomePage} />
             <Route exact path="/about-us" render={() => <AboutPage />} />
             <Route exact path="/contact-us" render={() => <ContactPage />} />
+            <Route exact path="/interactive-media" render={() => <InteractivePage />} />
             <Redirect to="/" />
           </Switch>
         </SiteInterface>

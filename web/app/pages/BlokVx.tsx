@@ -1,9 +1,9 @@
 import * as React from 'react';
 import ReactPlayer from 'react-player';
-
+import BounceImg from '../components/bounce'
 import { Modal, Button } from 'antd';
 import { Flex, Link as Href, Image, Box, Card, Heading, Text } from 'rebass';
-import Bounce from 'react-reveal/Bounce';
+import { Bounce } from 'react-reveal';
 
 
 const VideoPrices = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/BasicVideoProdPkgs.png?raw=true";
@@ -134,8 +134,8 @@ const BlokVx: React.SFC<{}> = () => {
 
     <Heading width={1} textAlign='center' mx='auto' pt={5} fontSize={[3, 4, 5]}>Types of Videos</Heading>
 
-    <Flex flexWrap="wrap" width={[1, 1, 11/12, 1/2]} mx='auto' my='auto'>
-      <Box width={1/2} mx='auto' px={2} fontSize={3} pb={5} pt={5}>
+    <Flex flexWrap="wrap" width={[1, 1, 11/12, 8/12]} mx='auto' my='auto'>
+      <Box width={11/12} mx='auto' px={2} fontSize={4} pb={5} pt={5}>
           <ul>
             <li> Branded Video - Under 60 seconds and Builds Awareness</li>
             <br />
@@ -152,9 +152,71 @@ const BlokVx: React.SFC<{}> = () => {
       </Box>
 
 
+      <Heading width={1} mx='auto' textAlign='center' fontSize={2} pb={5}>
+        <span className='headingSz'>
+      Starting Video Production Packages
+        </span>
+      </Heading>
+
+      <Flex flexWrap='wrap' mx='auto' my='auto'>
+
+      <Box width={1/4} >
+        <Text width={11/12} textAlign='center' fontSize={4} fontWeight='bold' pt={3}>
+        The Teaser
+        <br />
+        $1,200+
+        <br />
+        (Up To 15 Sec.)
+        </Text>
+        <Text width={11/12} textAlign='center' fontSize={3} pt={3}>
+        Short and Informative Teasers or Previews for Facebook or Instagram.
+        </Text>
+      </Box>
+
+      <Box width={1/4}>
+        <Text width={11/12} textAlign='center' fontSize={4} fontWeight='bold' pt={3}>
+        Social Media
+        <br />
+        $3,500+
+        <br />
+        (Up To 90 Sec.)
+        </Text>
+        <Text width={11/12} textAlign='center' fontSize={3} pt={3}>
+        Entertaining or Informative Videos for all Social Media Platforms. (Note: Instagram limits to 60 seconds)
+        </Text>
+      </Box>
+
+      <Box width={1/4}>
+        <Text width={11/12} textAlign='center' fontSize={4} fontWeight='bold' pt={3}>
+        Full-Length
+        <br />
+        $5,500+
+        <br />
+        (Up To 2.5 Mins.)
+        </Text>
+        <Text width={11/12} textAlign='center' fontSize={3} pt={3}>
+        For use on a website where your visitors are actively looking for information.
+        </Text>
+      </Box>
+
+      <Box width={1/4}>
+        <Text width={11/12} textAlign='center' fontSize={4} fontWeight='bold' pt={3}>
+        Proven Interest
+        <br />
+        $8,000+
+        <br />
+        (Longer than 2.5 Mins.)
+        </Text>
+        <Text width={11/12} textAlign='center' fontSize={3} pt={3}>
+        Ex: Mini-Documentaries, Interviews, Presentations for a Targeted or Established Audience.
+        </Text>
+      </Box>
+
+
+      </Flex>
     </Flex>
 
-    <Box width={1} mx='auto' fontSize={4} py={5}>
+    <Box width={1} mx='auto' fontSize={5} py={5}>
       <Text textAlign='center'> Contact Us for a free quote. </Text>
     </Box>
 
