@@ -4,6 +4,7 @@ import BounceImg from '../components/bounce'
 import { Modal, Button } from 'antd';
 import { Flex, Link as Href, Image, Box, Card, Heading, Text } from 'rebass';
 import { Bounce } from 'react-reveal';
+import { jsx } from '@emotion/core'
 
 
 const VideoPrices = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/BasicVideoProdPkgs.png?raw=true";
@@ -16,7 +17,7 @@ const Production = "https://github.com/Alkenox-ME/alkenox-me-images/blob/master/
 const BlokVx: React.SFC<{}> = () => {
   return (
     <Flex flexWrap="wrap" width={1} mx='auto'>
-      <Heading width={1} textAlign='center' mt={5} py={3} fontSize={[2, 2, 3, 5]}>
+      <Heading width={1} textAlign='center' mt={5} py={3} fontSize={[2, 2, 3, 5]} color='turquoise'>
         <span className='headingSz'>
         Video Production
         </span>
@@ -152,7 +153,7 @@ const BlokVx: React.SFC<{}> = () => {
       </Box>
 
 
-      <Heading width={1} mx='auto' textAlign='center' fontSize={2} pb={5}>
+      <Heading width={1} mx='auto' textAlign='center' fontSize={2} pb={5} color='turquoise'>
         <span className='headingSz'>
       Starting Video Production Packages
         </span>
@@ -161,7 +162,7 @@ const BlokVx: React.SFC<{}> = () => {
       <Flex flexWrap='wrap' mx='auto' my='auto'>
 
       <Box width={1/4} >
-        <Text width={11/12} textAlign='center' fontSize={4} fontWeight='bold' pt={3}>
+        <Text width={11/12} textAlign='center' fontSize={4} fontWeight='bold' pt={3} color='turquoise'>
         The Teaser
         <br />
         $1,200+
@@ -200,14 +201,14 @@ const BlokVx: React.SFC<{}> = () => {
       </Box>
 
       <Box width={1/4}>
-        <Text width={11/12} textAlign='center' fontSize={4} fontWeight='bold' pt={3}>
+        <Text width={11/12} textAlign='center' fontSize={4} fontWeight='bold' pt={3} color='turquoise'>
         Proven Interest
         <br />
-        $8,000+
+        <Text color='white'>$8,000+</Text>
         <br />
         (Longer than 2.5 Mins.)
         </Text>
-        <Text width={11/12} textAlign='center' fontSize={3} pt={3}>
+        <Text width={11/12} textAlign='center' fontSize={3} pt={3} color='lightgreen'>
         Ex: Mini-Documentaries, Interviews, Presentations for a Targeted or Established Audience.
         </Text>
       </Box>
