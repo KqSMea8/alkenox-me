@@ -48,7 +48,7 @@ const BlokVx: React.SFC<{}> = () => {
 
 
     <Flex flexWrap="wrap" mx='auto' px={3}>
-      <Box width={[1, 1, 11/12, 8/12]} mx='auto' py={4}>
+      <Box  mx='auto' py={4}>
         <ReactPlayer
           url="https://github.com/alkenox/alkenox-me-videos/blob/master/trailer-mosaic.mp4?raw=true"
           width="100%"
