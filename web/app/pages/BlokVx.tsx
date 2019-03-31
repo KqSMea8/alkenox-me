@@ -22,14 +22,14 @@ const BlokVx: React.SFC<{}> = () => {
         Video Production
         </span>
       </Heading>
-      <Heading width={1} textAlign='center' fontSize={[1, 1, 2, 3]}>
+      <Heading width={1} textAlign='center' fontSize={[1, 1, 2, 3]} color="orange">
         <span className='headingSz'>
         Web Video
         </span>
       </Heading>
 
       <Box width={[1, 1, 3/4, 6/8]} mx='auto' px={3}>
-        <Text width={[1]} mx='auto' pt={4} fontSize={4}>
+        <Text width={[1]} mx='auto' pt={4} fontSize={4} color='turquoise'>
           Whenever you surf the internet, you find yourself faced with at least one web video on almost every site you visit, that were
           created to explain products, services, and tell stories to anyone willing to stick around and watch. Most lazy web surfers tend to stop when faced with a video, which is why web videos have become a way to capture your visitors' attention and convert them into explorers  first, and then customers.
         </Text>
