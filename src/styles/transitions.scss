@@ -1,0 +1,22 @@
+.my-node-enter {
+  opacity: 0;
+  position: relative;
+  left: -100%;
+}
+.my-node-enter-active {
+  position: relative;
+  opacity: 1;
+  transition: all 3000s ease-in;
+  left: 0;
+}
+.my-node-exit {
+  position: relative;
+  opacity: 1;
+  left: 0;
+}
+.my-node-exit-active {
+  position: relative;
+  opacity: 0;
+  transition: all 3000s ease-in;
+  left: -100%;
+}

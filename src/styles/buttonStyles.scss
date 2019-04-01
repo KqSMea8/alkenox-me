@@ -1,0 +1,84 @@
+
+.btn
+{
+    font-size: 16px;
+
+    display: inline-block;
+
+    margin: 0;
+    padding: 0;
+    padding: 5px 15px;
+
+    cursor: pointer;
+    white-space: nowrap;
+
+    color: $white;
+    border: none;
+    //border: 1px solid $dark;
+    border-radius: 5px;
+    background-color: $transparent; /* Green */
+    background-image: linear-gradient($light, $dark);
+    &:hover
+    {
+        background-image: linear-gradient($light, $dark);
+        &[disabled]
+        {
+            background-image: linear-gradient($light, $dark);
+        }
+    }
+    &:visited
+    {
+        color: black;
+    }
+    &[disabled]
+    {
+        cursor: not-allowed;
+
+        opacity: .6;
+    }
+}
+.buttons
+{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+
+    margin-top: 15px;
+}
+button
+{
+    margin: 0 10px;
+    &:hover,
+    &:focus,
+    &:visited,
+    &:active
+    {
+        transition: all .5s ease-in-out;
+
+        opacity: .8;
+        color: $richer;
+        border: 0;
+        box-shadow: $transparent;
+    }
+}
+
+.prime
+{
+    width: 100%;
+    padding: .5em 1em;
+
+    cursor: pointer;
+    transition: .5s ease-in-out;
+
+    color: $light;
+    border-color: $light;
+    background-color: $darkTint;
+    &:hover
+    {
+        transition: .5s ease-in-out;
+
+        color: $richer;
+        border-color: $richer;
+        background-color: $darkTint;
+    }
+}

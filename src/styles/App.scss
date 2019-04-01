@@ -1,0 +1,90 @@
+// With Parcel, you have nothing to setup for SCSS, you just write!
+@import "./vars.scss";
+@import "./navStyles.scss";
+@import "./labelStyles.scss";
+@import "./reactModalMods.scss";
+@import "./antd.scss";
+@import "./antMods.scss";
+@import "./sanitize.scss";
+
+body {
+  overflow-x: hidden;
+
+  max-width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+
+  color: $richer;
+  background-color: $darkTint;
+  background-image: url($logo);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+a {
+  transition: all 1s ease-in-out;
+  text-decoration: none;
+
+  color: $light;
+
+  &:hover,
+  &:focus,
+  &:visited,
+  &:active {
+    transition: all 0.5s ease-in-out;
+
+    opacity: 0.8;
+    color: $richer;
+    border: 0;
+    box-shadow: $transparent;
+  }
+}
+
+.rad-6 {
+  border-radius: 60%;
+}
+
+.p4 {
+  padding: 4em;
+}
+
+.centerTxt {
+  justify-content: center;
+
+  text-align: center;
+}
+
+.centerMargin {
+  margin: 0 auto;
+}
+.fluid {
+  width: 100%;
+
+  object-fit: cover;
+  object-position: center;
+}
+.b-radius-1 {
+  border-radius: 50em;
+}
+.bannerize {
+  height: 40vh;
+}
+
+.logo-bg {
+  background-image: url($logo);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.tint-bg {
+  align-content: center;
+
+  min-width: 100vw;
+  min-height: 100vh;
+
+  background-color: rgba($dark, 0.8);
+}

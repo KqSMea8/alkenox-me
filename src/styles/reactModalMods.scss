@@ -1,0 +1,122 @@
+
+.ReactModal__Overlay,
+.ReactModal__Content,
+.ReactModal__Overlay--after-open,
+.ReactModal__Overlay--before-close
+{
+    z-index: 10200;
+
+    margin: 0;
+    padding: 0;
+
+    border: none;
+    background: $dark;
+}
+
+.ReactModal__Overlay
+{
+    transition: opacity 500ms ease-in-out;
+
+    opacity: 0;
+}
+
+.ReactModal__Overlay--after-open
+{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close
+{
+    opacity: 0;
+}
+
+.navTrigger
+{
+    line-height: .25em;
+
+    position: fixed;
+    z-index: 10000;
+
+    padding: .25em;
+
+    cursor: pointer;
+
+    color: $richer;
+    border-width: 0;
+    border-radius: 100%;
+    background-color: rgba(0,0,0,0);
+}
+
+.closeTrigger
+{
+    position: fixed;
+    z-index: 10000;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    margin: .5em;
+    padding: .25em;
+
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+    opacity: .4;
+    color: $light;
+    border: 0;
+    border-radius: 100%;
+    border-radius: 60%;
+    background-color: $dark;
+    box-shadow: $transparent;
+    &:hover,
+    &:focus,
+    &:visited,
+    &:active
+    {
+        transition: all .5s ease-in-out;
+
+        opacity: .8;
+        color: $richer;
+        border: 0;
+        background-color: $dark;
+        box-shadow: $transparent;
+    }
+}
+
+.closeTrigger
+{
+    position: fixed;
+    z-index: 10000;
+
+    display: flex;
+    align-content: center;
+    justify-content: center;
+
+    margin: .5em;
+    padding: .25em;
+
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+
+    opacity: .4;
+    color: $light;
+    border: 0;
+    border-radius: 100%;
+    border-radius: 60%;
+    background-color: $dark;
+    box-shadow: $transparent;
+    &:hover,
+    &:focus,
+    &:visited,
+    &:active
+    {
+        transition: all .5s ease-in-out;
+
+        opacity: .8;
+        color: $richer;
+        border: 0;
+        background-color: $dark;
+        box-shadow: $transparent;
+    }
+}

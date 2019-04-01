@@ -1,0 +1,184 @@
+
+.ant-input
+{
+    font-size: 1.5em;
+
+    width: 100%;
+    height: 100%;
+}
+.ant-input-number
+{
+    font-size: 1.5em;
+
+    width: 100%;
+}
+.ant-checkbox
+{
+    text-shadow: $darkTint;
+}
+.ant-tabs
+{
+    margin: auto 0;
+
+    color: inherit;
+}
+.ant-drawer-title
+{
+    //font-size: 16px;
+    //font-weight: 500;
+    //line-height: 22px;
+    //margin: 0;
+    color: $light;
+}
+.ant-drawer-content
+{
+    //position: relative;
+    //z-index: 1;
+    //border: 0;
+    background-color: $darkTint;
+    //background-clip: padding-box;
+}
+.ant-drawer-close
+{
+    //font-size: 16px;
+    //font-weight: 700;
+    //font-style: normal;
+    //line-height: 56px;
+    //position: absolute;
+    //z-index: 10;
+    //top: 0;
+    //right: 0;
+    //display: block;
+    //width: 56px;
+    //height: 56px;
+    //padding: 0;
+    //cursor: pointer;
+    //-webkit-transition: color .3s;
+    //        transition: color .3s;
+    //text-align: center;
+    //text-decoration: none;
+    //text-transform: none;
+    color: $light;
+    //border: 0;
+    //outline: 0;
+    background: transparent;
+
+    //text-rendering: auto;
+}
+.ant-drawer-close:focus,
+.ant-drawer-close:hover
+{
+    //text-decoration: none;
+    color: $light;
+}
+.ant-drawer-header
+{
+    //position: relative;
+    //padding: 16px 24px;
+    color: $light;
+    border-bottom: 1px solid #e8e8e8;
+    //border-radius: 4px 4px 0 0;
+    background: $darkTint;
+}
+.ant-drawer-header-no-title
+{
+    color: $light;
+    background: $darkTint;
+}
+.ant-drawer-body
+{
+    //font-size: 14px;
+    //line-height: 1.5;
+
+    //padding: 24px;
+
+    //word-wrap: break-word;
+}
+.ant-drawer-mask
+{
+    //position: fixed;
+    width: 100%;
+    height: 0;
+    //-webkit-transition: opacity .3s linear, height 0s ease .3s;
+    //          transition: opacity .3s linear, height 0s ease .3s;
+
+    opacity: 0;
+    background-color: $darkTint;
+
+    //  filter: alpha(opacity=50);
+}
+
+.ant-tabs
+{
+    font-size: 1em;
+    //font-variant: tabular-nums;
+    //line-height: 1.5;
+    //position: relative;
+    //overflow: hidden;
+    //zoom: 1;
+    //-webkit-box-sizing: border-box;
+    //        box-sizing: border-box;
+    //margin: 0;
+    //padding: 0;
+    //list-style: none;
+
+    color: $light;
+
+    //-webkit-font-feature-settings: 'tnum';
+    //        font-feature-settings: 'tnum';
+}
+.ant-tabs-tab
+{
+    font-size: 1.3em;
+    //font-variant: tabular-nums;
+    //line-height: 1.5;
+    //position: relative;
+    //overflow: hidden;
+    //zoom: 1;
+    //-webkit-box-sizing: border-box;
+    //        box-sizing: border-box;
+    //margin: 0;
+    //padding: 0;
+    //list-style: none;
+
+    color: $light;
+
+    //-webkit-font-feature-settings: 'tnum';
+    //        font-feature-settings: 'tnum';
+}
+
+.ant-collapse
+{
+    //color: $light;
+    background-color: rgba($white, .6);
+}
+.ant-collapse-item
+{
+    //color: $light;
+    //background-color: inherit;
+}
+.ant-collapse-item-active
+{
+    //color: $light;
+    //background-color: inherit;
+}
+.ant-collapse-header
+{
+    //color: $light;
+    //background-color: inherit;
+}
+.ant-collapse-content
+{
+    //color: $light;
+    background-color: inherit;
+}
+.ant-collapse-content-active
+{
+    //color: $light;
+    //background-color: inherit;
+}
+.ant-collapse-content-inactive
+{
+    //  color: $light;
+    //  background-color: inherit;
+}

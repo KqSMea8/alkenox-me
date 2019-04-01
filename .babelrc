@@ -1,0 +1,57 @@
+{
+  "presets": ["react-app", "@emotion/babel-preset-css-prop"],
+  "plugins": [
+    "transform-class-properties",
+    "babel-plugin-dynamic-import-node",
+    "@loadable/babel-plugin",
+    ["@babel/plugin-proposal-class-properties", { "loose": true }],
+    [
+      "emotion",
+      {
+        "sourceMap": true,
+        "autoLabel": "process.env.NODE_ENV !== 'production'",
+        "labelFormat": "[local]",
+        "cssPropOptimization": true
+      }
+    ],
+    [
+      "babel-plugin-component-import",
+      {
+        "libraryName": "antd",
+        "libraryDirectory": "lib",
+        "style": true,
+        "styleLibraryName": "style",
+        "styleDirectory": "dist",
+        "styleLibraryPath": "",
+        "camel2DashComponentName": true,
+        "camel2UnderlineComponentName": false,
+        "fileName": "",
+        "customName": null
+      },
+      {
+        "libraryName": "react-reveal",
+        "libraryDirectory": "",
+        "style": false,
+        "styleLibraryName": "",
+        "styleDirectory": "",
+        "styleLibraryPath": "",
+        "camel2DashComponentName": true,
+        "camel2UnderlineComponentName": false,
+        "fileName": "",
+        "customName": null
+      },
+      {
+        "libraryName": "react-icons",
+        "libraryDirectory": "lib",
+        "style": false,
+        "styleLibraryName": "",
+        "styleDirectory": "",
+        "styleLibraryPath": "",
+        "camel2DashComponentName": true,
+        "camel2UnderlineComponentName": false,
+        "fileName": "",
+        "customName": null
+      }
+    ]
+  ]
+}

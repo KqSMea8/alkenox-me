@@ -1,0 +1,80 @@
+//Nav BTN
+.btn-trigger {
+  background-color: $darkTint;
+  z-index: 1000;
+  position: fixed;
+  top: 0%;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    transition: all 0.5s ease-in-out;
+
+    color: $richer;
+    background-color: $darkTint;
+  }
+}
+.btn-nav {
+  background-color: $darkTint;
+  z-index: 11000;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    transition: all 0.5s ease-in-out;
+
+    color: $richer;
+    background-color: $darkTint;
+  }
+}
+
+.menu-bars {
+  color: $light;
+  background-color: $darkTint;
+  z-index: 9000;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    transition: all 0.5s ease-in-out;
+
+    color: $richer;
+    background-color: $darkTint;
+  }
+}
+
+.nav-drawer {
+  background-color: $darkTint;
+}
+//----------
+
+.labelLink {
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  text-decoration: none;
+
+  color: $light;
+
+  &:hover,
+  &:focus {
+    transition: all 0.5s ease-in-out;
+
+    color: $richer;
+  }
+}
+span {
+  border: 0;
+}
+
+.navTrigger {
+  line-height: 0.25em;
+
+  position: fixed;
+  z-index: 10000;
+
+  padding: 0.25em;
+
+  cursor: pointer;
+
+  color: $richer;
+  border-width: 0;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0);
+}
