@@ -1,6 +1,0 @@
-{
-  "watch": [ "root" ],
-  "ext": "ts",
-  "ignore": [ "root/public" ],
-  "exec": "ts-node root/src/start.ts dev"
-}
